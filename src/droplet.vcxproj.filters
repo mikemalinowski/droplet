@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{8942db9c-a96d-4a88-8906-0f4aa11b59e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{c456c83c-7961-4025-9d6d-7c3fe4bbc048}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rigging">
+      <UniqueIdentifier>{f3eafb50-9a58-49e9-84b3-82188263eb86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\FloatOpCompound">
+      <UniqueIdentifier>{e08362cf-7c97-4a31-bcd2-43dc59df4bf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rigging\QuaternionTwist">
+      <UniqueIdentifier>{e984323e-7b54-4607-addf-880b111503ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rigging\Soft2BoneIk">
+      <UniqueIdentifier>{87eaebdd-3cea-44ff-8e69-79aba968827b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="droplet.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="FloatOpCompound.h">
+      <Filter>Utilities\FloatOpCompound</Filter>
+    </ClInclude>
+    <ClInclude Include="QuaternionTwist.h">
+      <Filter>Rigging\QuaternionTwist</Filter>
+    </ClInclude>
+    <ClInclude Include="Soft2BoneIk.h">
+      <Filter>Rigging\Soft2BoneIk</Filter>
+    </ClInclude>
+    <ClInclude Include="AuxMath.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="droplet.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="FloatOpCompound.cpp">
+      <Filter>Utilities\FloatOpCompound</Filter>
+    </ClCompile>
+    <ClCompile Include="QuaternionTwist.cpp">
+      <Filter>Rigging\QuaternionTwist</Filter>
+    </ClCompile>
+    <ClCompile Include="Soft2BoneIk.cpp">
+      <Filter>Rigging\Soft2BoneIk</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
