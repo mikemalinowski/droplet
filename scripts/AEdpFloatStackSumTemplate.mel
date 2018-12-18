@@ -1,0 +1,43 @@
+
+global proc AEdpFloatStackSumBranding()
+{
+
+	setUITemplate -pushTemplate attributeEditorTemplate;
+
+    columnLayout -adjustableColumn true;
+
+        rowLayout -numberOfColumns 3;
+            image -image "aeSumFloatStack.png" -width 400 -height 100;
+			setParent ..;
+        setParent ..;
+        button -label "Add Value" -backgroundColor 0.98 0.48 0.1;
+        button -label "Edit Value" -backgroundColor 0.98 0.48 0.1;
+
+    setParent ..;
+
+    setUITemplate -popTemplate;
+	
+	print(123);
+}
+
+global proc AEdpFloatStackSumAlt()
+{
+	return;
+}
+
+proc x()
+{
+    print("x");
+}
+global proc AEdpFloatStackSumTemplate( string $nodeName )
+{
+    editorTemplate -beginScrollLayout;
+
+	        editorTemplate -callCustom AEdpFloatStackSumBranding AEdpFloatStackSumBrandingAlt;
+			editorTemplate -addControl "values" -c "x";
+			
+    editorTemplate -addExtraControls;
+
+    editorTemplate -endScrollLayout;
+	print(999);
+}

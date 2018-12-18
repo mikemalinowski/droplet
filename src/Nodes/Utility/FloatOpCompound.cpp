@@ -17,6 +17,7 @@ Author : Mike Malinowski : www.twisted.space
 
 // -- Droplet Includes
 #include "FloatOpCompound.h"
+#include "../../Utilities/Attributes.h"
 
 // -- Declare our plugs
 MObject FloatOpCompound::values;
@@ -34,21 +35,14 @@ void* FloatOpCompound::creator()
 /* ---------------------------------------------------------------------- */
 MStatus FloatOpCompound::initialize()
 {
-	MFnNumericAttribute  numericAttrFn;
-	MFnEnumAttribute     enumAttrFn;
-
-	FloatOpCompound::values = numericAttrFn.create("values", "val", MFnNumericData::kFloat);
-	numericAttrFn.setArray(true);
-	numericAttrFn.setKeyable(true);
+	FloatOpCompound::values = CreateAttribute("values", float(0), true, true, true, true);
 	CHECK_MSTATUS_AND_RETURN(addAttribute(FloatOpCompound::values), MStatus::kFailure);
 
-	FloatOpCompound::operation = enumAttrFn.create("operation", "op");
-	enumAttrFn.addField("addition", 0);
-	enumAttrFn.addField("subtraction", 1);
-	enumAttrFn.addField("multiplication", 2);
+	std::vector<const char*> labels = {"Addition", "Subtraction", "Multiplication"};
+	FloatOpCompound::operation = CreateAttribute("operation", labels, false, true, false, true);
 	CHECK_MSTATUS_AND_RETURN(addAttribute(FloatOpCompound::operation), MStatus::kFailure);
 
-	FloatOpCompound::result = numericAttrFn.create("result", "res", MFnNumericData::kFloat);
+	FloatOpCompound::result = CreateAttribute("result", float(0), false, false, false, false);
 	CHECK_MSTATUS_AND_RETURN(addAttribute(FloatOpCompound::result), MStatus::kFailure);
 
 	attributeAffects(FloatOpCompound::values, FloatOpCompound::result);
@@ -69,20 +63,21 @@ MStatus FloatOpCompound::compute(const MPlug& plug, MDataBlock& dataBlock)
 	// -- Ensure we're starting the interation at the begining
 	inputData.jumpToElement(0);
 
-	float tracking_value = 0;
+	float result = 0;
 	for (int i = 0; i < inputData.elementCount(); i++, inputData.next())
 	{
 		float input = inputData.inputValue().asFloat();
 
 		if (opIndex == 0)
-			tracking_value += input;
+			result += input;
 		if (opIndex == 1)
-			tracking_value -= input;
+			result -= input;
 		if (opIndex == 2)
-			tracking_value *= input;
+			result *= input;
 	}
-	dataBlock.outputValue(FloatOpCompound::result).set(tracking_value);
-	
+	dataBlock.outputValue(FloatOpCompound::result).set(result);
+	dataBlock.setClean(FloatOpCompound::result);
+
 	return MStatus::kSuccess;
 }
 

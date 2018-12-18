@@ -1,0 +1,8 @@
+//
+// Created by mikem on 18/12/2018.
+//
+
+#ifndef DROPLET_STACKMINFLOAT_H
+#define DROPLET_STACKMINFLOAT_H
+
+#endif //DROPLET_STACKMINFLOAT_H

@@ -1,0 +1,8 @@
+//
+// Created by mikem on 18/12/2018.
+//
+
+#ifndef DROPLET_STACKDIVIDEANGLE_H
+#define DROPLET_STACKDIVIDEANGLE_H
+
+#endif //DROPLET_STACKDIVIDEANGLE_H

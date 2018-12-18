@@ -1,0 +1,8 @@
+//
+// Created by mikem on 18/12/2018.
+//
+
+#ifndef DROPLET_DIVIDEANGLES_H
+#define DROPLET_DIVIDEANGLES_H
+
+#endif //DROPLET_DIVIDEANGLES_H

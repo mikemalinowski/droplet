@@ -1,0 +1,8 @@
+//
+// Created by mikem on 18/12/2018.
+//
+
+#ifndef DROPLET_SCALEANGLEVECTOR_H
+#define DROPLET_SCALEANGLEVECTOR_H
+
+#endif //DROPLET_SCALEANGLEVECTOR_H

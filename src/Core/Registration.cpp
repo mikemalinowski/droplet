@@ -5,11 +5,13 @@ code.
 
 Author : Mike Malinowski : www.twisted.space
 */
-#include "droplet.h"
+#include "Registration.h"
 #include "../Nodes/Rigging/Soft2BoneIk.h"
 #include "../Nodes/Rigging/QuaternionTwist.h"
 #include "../Nodes/Utility/FloatOpCompound.h"
+#include "../Nodes/Stacks/FloatStackSum.h"
 #include <maya/MFnPlugin.h>
+#include <vector>
 
 
 // -- List of all the id's. These are placed here rather than
@@ -55,6 +57,16 @@ MStatus initializePlugin(MObject obj) {
 			Soft2BoneIk::initialize
 	);
 	CHECK_MSTATUS_AND_RETURN_IT(status);
+
+
+	// -- Register our nodes
+	status = plugin.registerNode(
+			nodePrefix + FloatStackSum::NodeName(),
+			MTypeId(FloatStackSum::TypeId),
+			FloatStackSum::creator,
+			FloatStackSum::initialize
+	);
+	CHECK_MSTATUS_AND_RETURN_IT(status);
 	return status;
 }
 
@@ -70,5 +82,7 @@ MStatus uninitializePlugin(MObject obj) {
 	status = plugin.deregisterNode(MTypeId(idSoft2BoneIk));
 	CHECK_MSTATUS_AND_RETURN_IT(status);
 
+	status = plugin.deregisterNode(MTypeId(FloatStackSum::TypeId));
+	CHECK_MSTATUS_AND_RETURN_IT(status);
 	return status;
 }

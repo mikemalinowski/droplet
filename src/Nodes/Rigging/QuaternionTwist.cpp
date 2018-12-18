@@ -23,7 +23,7 @@ Author : Mike Malinowski : www.twisted.space
 #include <maya/MFnMatrixAttribute.h>
 
 // Droplet Includes
-#include "../../Auxillary/AuxMath.h"
+#include "../../Utilities/Math.h"
 #include "QuaternionTwist.h"
 
 
@@ -125,17 +125,17 @@ MStatus QuaternionTwist::compute(const MPlug& plug, MDataBlock& dataBlock)
 
 	// -- Split the rotation and the position and lerp/slerp them
 	MMatrix rotation_matrix = QuaternionTwist::RotationMatrix(transformA, transformB, twist);
-	MVector position_vector = AuxMath::LerpTransformPositions(transformA, transformB, twist);
+	MVector position_vector = DropletMath::LerpTransformPositions(transformA, transformB, twist);
 
 	// -- Rebuild the 4x4 matrix
-	MMatrix twistedWorldSpaceMatrix = AuxMath::FormTransform(rotation_matrix, position_vector).asMatrix();
+	MMatrix twistedWorldSpaceMatrix = DropletMath::FormTransform(rotation_matrix, position_vector).asMatrix();
 
 	// Get the relative matrix between the twistMat4 and the parent global
-	MMatrix twistedMatrix = AuxMath::RelativeMatrix(twistedWorldSpaceMatrix, parentWorldMatrix);
+	MMatrix twistedMatrix = DropletMath::RelativeMatrix(twistedWorldSpaceMatrix, parentWorldMatrix);
 
 	// -- Extract the data we need
 	MTransformationMatrix twistedTransform(twistedMatrix);
-	MVector rotationVector = AuxMath::RotationFromTransform(twistedTransform, offset);
+	MVector rotationVector = DropletMath::RotationFromTransform(twistedTransform, offset);
 	MFloatVector translationVector(twistedTransform.getTranslation(MSpace::kWorld));
 
 	// -- Set the output plugs
@@ -156,8 +156,8 @@ MMatrix QuaternionTwist::RotationMatrix(MTransformationMatrix transformA, MTrans
 	MVector     altAxis = QuaternionTwist::ExtractAxis(slerpedQuaternion, 2);
 
 	MVector     axisX = QuaternionTwist::SubtractionVector(transformA, transformB);
-	MVector     axisZ = AuxMath::CrossVectors(altAxis, axisX);
-	MVector     axisY = AuxMath::CrossVectors(axisZ, axisX);
+	MVector     axisZ = DropletMath::CrossVectors(altAxis, axisX);
+	MVector     axisY = DropletMath::CrossVectors(axisZ, axisX);
 
 	MMatrix rotationMatrix = MMatrix();
 
@@ -189,7 +189,7 @@ MQuaternion QuaternionTwist::SlerpInterpolation(MTransformationMatrix transformA
 	MQuaternion quatA(xA, yA, zA, wA);
 	MQuaternion quatB(xB, yB, zB, wB);
 
-	return AuxMath::SlerpQuaternion(quatA, quatB, twistFactor);
+	return DropletMath::SlerpQuaternion(quatA, quatB, twistFactor);
 }
 
 

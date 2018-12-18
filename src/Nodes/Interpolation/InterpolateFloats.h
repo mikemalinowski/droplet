@@ -1,0 +1,8 @@
+//
+// Created by mikem on 18/12/2018.
+//
+
+#ifndef DROPLET_INTERPOLATEFLOAT_H
+#define DROPLET_INTERPOLATEFLOAT_H
+
+#endif //DROPLET_INTERPOLATEFLOAT_H

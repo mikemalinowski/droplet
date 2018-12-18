@@ -1,0 +1,8 @@
+//
+// Created by mikem on 18/12/2018.
+//
+
+#ifndef DROPLET_ADDFLOATTOVECTOR_H
+#define DROPLET_ADDFLOATTOVECTOR_H
+
+#endif //DROPLET_ADDFLOATTOVECTOR_H

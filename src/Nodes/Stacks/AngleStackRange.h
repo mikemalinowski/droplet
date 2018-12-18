@@ -1,0 +1,8 @@
+//
+// Created by mikem on 18/12/2018.
+//
+
+#ifndef DROPLET_STACKRANGEANGLE_H
+#define DROPLET_STACKRANGEANGLE_H
+
+#endif //DROPLET_STACKRANGEANGLE_H

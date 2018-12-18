@@ -21,7 +21,7 @@ Author : Mike Malinowski : www.twisted.space
 #include <maya/MFnMatrixAttribute.h>
 
 
-namespace AuxMath
+namespace DropletMath
 {
 	/* ---------------------------------------------------------------------- */
 	MVector RotationFromTransform(MTransformationMatrix transform, double x_offset=0, double y_offset=0, double z_offset=0)

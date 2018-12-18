@@ -1,0 +1,8 @@
+//
+// Created by mikem on 18/12/2018.
+//
+
+#ifndef DROPLET_POWEROFANGLE_H
+#define DROPLET_POWEROFANGLE_H
+
+#endif //DROPLET_POWEROFANGLE_H
