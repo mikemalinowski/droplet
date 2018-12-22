@@ -1,68 +1,103 @@
-//
-// Created by mikem on 18/12/2018.
-//
+/*
+
+Droplet : Attributes
+
+Constains all the functionality within the dp::attributes
+namespace. The aim is to take code that usually requires
+multiple lines of input and boils it down to one or two.
+
+Author : Mike Malinowski : www.twisted.space
+
+*/
 #pragma once
 
+// Maya Includes
+#include <maya/MAngle.h>
+#include <maya/MObject.h>
+#include <maya/MVector.h>
+#include <maya/MGlobal.h>
+#include <maya/MPxNode.h>
 #include <maya/MStatus.h>
 #include <maya/MFnAttribute.h>
+#include <maya/MFnUnitAttribute.h>
 #include <maya/MFnEnumAttribute.h>
 #include <maya/MFnNumericAttribute.h>
-#include <maya/MObject.h>
+#include <maya/MFnCompoundAttribute.h>
+
+// Other Includes
 #include <vector>
+#include <string>
 
-inline void SetAttributeProperties(MFnAttribute& attrFn, bool isArray=false, bool isKeyable=true, bool isWritable=true, bool isStorable=true)
+
+// --------------------------------------------------------
+// All our utility functionality is always nested under our
+// dp (droplet) namespace to prevent any name clashes.
+namespace dp
 {
-    attrFn.setArray(isArray);
-    attrFn.setKeyable(isKeyable);
-    attrFn.setArray(isArray);
-    attrFn.setWritable(isWritable);
-    attrFn.setStorable(isStorable);
+    // ---------------------------------------------------------
+    // All attribute functionality is nested under the attribute
+    // namespace
+    namespace attributes
+    {
 
-}
+        // ----------------------------------------------------
+        // Sets all the required properties of an AttributeFn
+        // object to show it as an input. This includes keyable
+        // writable and storable.
+        inline void DefineAsInput(MFnAttribute& attrFn);
 
-inline MObject CreateAttribute(const char* name, float value, bool isKeyable=true, bool isWritable=true, bool isArray=false, bool isStorable=true)
-{
+        // ----------------------------------------------------
+        // Sets all the required properties of an AttributeFn
+        // object to show it as an input. This includes keyable
+        // writable and storable.
+        inline void DefineAsOutput(MFnAttribute& attrFn);
 
-    MFnNumericAttribute numericAttrFn;
+        // ------------------------------------------------
+        // Creates a float attribute and adds the attribute
+        // to the node. You can use the isInput property to
+        // define whether or not the attribute should be an
+        // input or an output.
+        void Create(const char* name, float value, static MPxNode node, MObject& attr, bool isInput, bool isArray=false);
 
-    // -- Create the attribute
-    MObject attr = numericAttrFn.create(name, name, MFnNumericData::kFloat, value);
+        // ------------------------------------------------
+        // Creates an int attribute and adds the attribute
+        // to the node. You can use the isInput property to
+        // define whether or not the attribute should be an
+        // input or an output.
+        void Create(const char* name, int value, static MPxNode node, MObject& attr, bool isInput, bool isArray=false);
 
-    // -- Set the attribute properties
-    SetAttributeProperties(
-        numericAttrFn,
-        isArray,
-        isKeyable,
-        isWritable,
-        isStorable
-    );
+        // ------------------------------------------------
+        // Creates a bool attribute and adds the attribute
+        // to the node. You can use the isInput property to
+        // define whether or not the attribute should be an
+        // input or an output.
+        void Create(const char* name, bool value, static MPxNode node, MObject& attr, bool isInput, bool isArray=false);
 
-    return attr;
-}
+        // -------------------------------------------------
+        // Creates an Angle attribute and adds the attribute
+        // to the node. You can use the isInput property to
+        // define whether or not the attribute should be an
+        // input or an output.
+        void Create(const char* name, MAngle value, static MPxNode node, MObject& attr, bool isInput, bool isArray=false);
 
-inline MObject CreateAttribute(const char* name, std::vector<const char*> values, bool isKeyable=true, bool isWritable=true, bool isArray=false, bool isStorable=true)
-{
+        // ------------------------------------------------
+        // Creates an enum attribute and adds the attribute
+        // to the node. You can use the isInput property to
+        // define whether or not the attribute should be an
+        // input or an output.
+        void Create(const char* name, std::vector<const char*> values, static MPxNode node, MObject& attr, bool isInput);
 
-    MFnEnumAttribute enumFn;
+        // -----------------------------------------------------
+        // Creates a numeric collection attribute which ties the
+        // three given numerical attributes together
+        void Create(const char* name, MObject& attr, MObject& x, MObject& y, MObject& z);
 
-    // -- Create the attribute
-    MObject attr = enumFn.create(name, name);
-
-    // -- Set the attribute properties
-    SetAttributeProperties(
-        enumFn,
-        isArray,
-        isKeyable,
-        isWritable,
-        isStorable
-    );
-
-    // -- Add all the enumerators
-    short index = 0;
-    for(const char* item: values) {
-        enumFn.addField(item, index);
-        index++;
+        // --------------------------------------------------------
+        // Creates a compound attribute with three children. This
+        // accepts and value type which has support for the
+        // dp::attributes::Create function.
+        // This will create and add all the plugs.
+        template <class T>
+        inline void CreateCompound(const char* name, T value, static MPxNode node, MObject& c, MObject& x, MObject& y, MObject& z, bool isInput=true);
     }
-
-    return attr;
 }

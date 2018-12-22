@@ -7,15 +7,14 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
 set(SOURCE_FILES
         src/Utilities/Math.h
-        src/Core/Registration.cpp
-        src/Core/Registration.h
-        src/Nodes/Utility/FloatOpCompound.cpp
-        src/Nodes/Utility/FloatOpCompound.h
+        src/Utilities/Attributes.h
+        src/Utilities/Attributes.cpp
+        src/Core/Droplet.cpp
+        src/Core/Droplet.h
         src/Nodes/Rigging/QuaternionTwist.cpp
         src/Nodes/Rigging/QuaternionTwist.h
         src/Nodes/Rigging/Soft2BoneIk.cpp
         src/Nodes/Rigging/Soft2BoneIk.h
-        src/Utilities/Attributes.h
         src/Nodes/Stacks/FloatStackSum.h
         src/Nodes/Stacks/FloatStackMin.h
         src/Nodes/Stacks/FloatStackMax.h
@@ -58,7 +57,7 @@ set(SOURCE_FILES
         src/Nodes/Angles/AngleExponent.h
         src/Nodes/Basic/Exponent.h
         src/Nodes/Stacks/FloatStackSum.cpp
-        src/Core/DropletNode.h)
+        src/Core/DropletNode.h src/Nodes/Stacks/FloatStackMinus.cpp src/Utilities/Attributes.cpp)
 
 find_package(Maya REQUIRED)
 

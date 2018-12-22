@@ -6,19 +6,21 @@ across multiple nodes/commands.
 Author : Mike Malinowski : www.twisted.space
 */
 #pragma once
+
+// Maya Includes
 #include <maya/MPxNode.h>
-#include <maya/MArrayDataHandle.h>
 #include <maya/MGlobal.h>
 #include <maya/MMatrix.h>
 #include <maya/MVector.h>
 #include <maya/MQuaternion.h>
 #include <maya/MFloatVector.h>
 #include <maya/MEulerRotation.h>
-#include <maya/MTransformationMatrix.h>
-#include <maya/MFnNumericAttribute.h>
 #include <maya/MFnUnitAttribute.h>
-#include <maya/MFnCompoundAttribute.h>
+#include <maya/MArrayDataHandle.h>
 #include <maya/MFnMatrixAttribute.h>
+#include <maya/MFnNumericAttribute.h>
+#include <maya/MFnCompoundAttribute.h>
+#include <maya/MTransformationMatrix.h>
 
 
 namespace DropletMath
