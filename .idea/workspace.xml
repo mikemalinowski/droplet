@@ -12,67 +12,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4f95317-c5c6-4a97-9ed3-5bf63b7b7f3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/droplet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/droplet.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMin.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMultiply.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackRange.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.bat" beforeDir="false" afterPath="$PROJECT_DIR$/build.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/FindMaya.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/modules/FindMaya.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/AEdpFloatStackSumTemplate.mel" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/AEdpFloatStackSumTemplate.mel" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/DropletNode.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/DropletNode.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Registration.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Registration.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Angles/AngleAdd.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Angles/AngleAdd.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Angles/AngleClamp.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Angles/AngleClamp.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Angles/AngleDivide.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Angles/AngleDivide.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Angles/AngleExponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Angles/AngleExponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Angles/AngleMultiply.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Angles/AngleMultiply.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Angles/AnglePower.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Angles/AnglePower.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Angles/AngleRange.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Angles/AngleRange.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Angles/AngleSqrt.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Angles/AngleSqrt.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Angles/AngleSubtract.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Angles/AngleSubtract.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Basic/Exponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Basic/Exponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Basic/Power.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Basic/Power.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Basic/Sqrt.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Basic/Sqrt.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Interpolation/InterpolateAngleVectors.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Interpolation/InterpolateAngleVectors.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Interpolation/InterpolateAngles.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Interpolation/InterpolateAngles.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Interpolation/InterpolateFloatVectors.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Interpolation/InterpolateFloatVectors.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Interpolation/InterpolateFloats.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Interpolation/InterpolateFloats.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Interpolation/InterpolateMatrices.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Interpolation/InterpolateMatrices.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Interpolation/InterpolateQuaternions.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Interpolation/InterpolateQuaternions.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Rigging/QuaternionTwist.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Rigging/QuaternionTwist.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Rigging/QuaternionTwist.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Rigging/QuaternionTwist.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Rigging/Soft2BoneIk.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Rigging/Soft2BoneIk.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Rigging/Soft2BoneIk.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Rigging/Soft2BoneIk.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Spaces/DistanceBetweenMatrices.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Spaces/DistanceBetweenMatrices.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Spaces/DistanceBetweenVectors.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Spaces/DistanceBetweenVectors.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Spaces/RelativeMatrix.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Spaces/RelativeMatrix.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackDivide.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackDivide.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMax.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMax.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMin.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMin.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMinus.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMinus.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMultiply.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMultiply.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackRange.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackRange.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackSum.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackSum.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackDivide.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackDivide.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMax.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMax.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/2018/droplet.mll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/2018/droplet.mll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Droplet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Droplet.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMin.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMin.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMinus.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMinus.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMultiply.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMultiply.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackRange.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackRange.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackSum.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackSum.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackSum.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackSum.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Vectors/AngleVectorAdd.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Vectors/AngleVectorAdd.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Vectors/AngleVectorDivide.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Vectors/AngleVectorDivide.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Vectors/AngleVectorScale.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Vectors/AngleVectorScale.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Vectors/FloatVectorAdd.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Vectors/FloatVectorAdd.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Vectors/FloatVectorDivide.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Vectors/FloatVectorDivide.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Vectors/FloatVectorScale.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Vectors/FloatVectorScale.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utilities/Attributes.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utilities/Attributes.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utilities/Math.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utilities/Math.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/id_bank.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/id_bank.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/CMakeFiles/" />
@@ -91,8 +42,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Core/Droplet.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-266">
-              <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+            <state relative-caret-position="482">
+              <caret line="68" column="53" selection-start-line="68" selection-start-column="53" selection-end-line="68" selection-end-column="53" />
               <folding>
                 <element signature="e#191#211#0" expanded="true" />
               </folding>
@@ -102,7 +53,11 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMultiply.h">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -119,36 +74,73 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMin.h">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Core/DropletNode.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+            <state relative-caret-position="289">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="e#224#247#0" expanded="true" />
+                <element signature="e#350#385#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Core/Droplet.h">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMin.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1213">
+              <caret line="74" column="5" lean-forward="true" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+              <folding>
+                <element signature="e#213#238#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMultiply.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+              <folding>
+                <element signature="e#188#213#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMax.h">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackRange.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="29" column="27" lean-forward="true" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+              <folding>
+                <element signature="e#31#54#0" expanded="true" />
+                <element signature="e#157#192#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackDivide.h">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackRange.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="329">
+              <caret line="26" lean-forward="true" selection-end-line="91" />
+              <folding>
+                <element signature="e#213#238#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/AngleStackSum.h">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/id_bank.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -158,7 +150,6 @@
               <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
               <folding>
                 <element signature="e#197#220#0" expanded="true" />
-                <element signature="e#307#342#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -204,7 +195,6 @@
         <option value="$PROJECT_DIR$/src/Nodes/Rigging/QuaternionTwist.cpp" />
         <option value="$PROJECT_DIR$/droplet.mod" />
         <option value="$PROJECT_DIR$/scripts/AEdpFloatStackSumTemplate.mel" />
-        <option value="$PROJECT_DIR$/src/id_bank.txt" />
         <option value="$PROJECT_DIR$/src/Core/Registration.h" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.cpp" />
@@ -212,22 +202,30 @@
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/Utilities/Registration.cpp" />
         <option value="$PROJECT_DIR$/src/Utilities/Registration.h" />
-        <option value="$PROJECT_DIR$/src/Core/Droplet.cpp" />
         <option value="$PROJECT_DIR$/src/Core/DropletNode.h" />
         <option value="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMinus.cpp" />
         <option value="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackSum.cpp" />
         <option value="$PROJECT_DIR$/src/Utilities/Attributes.h" />
         <option value="$PROJECT_DIR$/src/Utilities/Math.h" />
         <option value="$PROJECT_DIR$/src/Utilities/Attributes.cpp" />
-        <option value="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackSum.h" />
         <option value="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMinus.h" />
+        <option value="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackSum.h" />
+        <option value="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackRange.h" />
+        <option value="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackRange.cpp" />
+        <option value="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMultiply.h" />
+        <option value="$PROJECT_DIR$/src/id_bank.txt" />
+        <option value="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMin.h" />
+        <option value="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMin.cpp" />
+        <option value="$PROJECT_DIR$/src/Core/Droplet.cpp" />
+        <option value="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMultiply.cpp" />
       </list>
     </option>
   </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="1939" />
     <option name="height" value="1176" />
   </component>
   <component name="ProjectView">
@@ -351,11 +349,12 @@
       <workItem from="1545084812592" duration="19481000" />
       <workItem from="1545306464109" duration="5689000" />
       <workItem from="1545490992205" duration="2774000" />
+      <workItem from="1545516063209" duration="3400000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29026000" />
+    <option name="totallyTimeSpent" value="32426000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -369,7 +368,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1728" height="1117" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20898204" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21137725" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -380,9 +379,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32885906" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.92035925" visible="true" weight="0.30730224" />
+      <window_info active="true" anchor="bottom" id="Messages" order="8" sideWeight="0.91976047" visible="true" weight="0.30730224" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49946696" weight="0.32885906" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.07964072" side_tool="true" visible="true" weight="0.30730224" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.08023952" side_tool="true" visible="true" weight="0.30730224" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="CMake" order="12" sideWeight="0.49946696" weight="0.3279003" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -395,18 +394,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Nodes/Interpolation/InterpolateAngleVectors.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Nodes/Interpolation/InterpolateMatrices.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Nodes/Interpolation/InterpolateQuaternions.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Nodes/Spaces/DistanceBetweenVectors.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Nodes/Spaces/DistanceBetweenMatrices.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -495,13 +482,6 @@
       </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.cpp" />
-    <entry file="file://$PROJECT_DIR$/src/id_bank.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.sql" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.cpp" />
     <entry file="file://C:/Program Files/Autodesk/Maya2018/include/maya/MApiNamespace.h">
@@ -514,27 +494,8 @@
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Utilities/Registration.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding>
-            <element signature="e#23#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Utilities/Registration.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="22" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-            <element signature="e#9#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Utilities/Registration.h" />
+    <entry file="file://$PROJECT_DIR$/src/Utilities/Registration.cpp" />
     <entry file="file://$PROJECT_DIR$/src/Utilities/Math.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -568,32 +529,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackSum.h">
+    <entry file="file://$PROJECT_DIR$/src/Core/Droplet.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMax.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackDivide.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/AngleStackSum.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/DropletNode.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-          <folding>
-            <element signature="e#31#54#0" expanded="true" />
-            <element signature="e#141#176#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Autodesk/Maya2018/include/maya/MDataHandle.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="248" column="33" selection-start-line="248" selection-start-column="17" selection-end-line="248" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackSum.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="56" column="64" selection-start-line="56" selection-start-column="64" selection-end-line="56" selection-end-column="64" />
+        <state relative-caret-position="295">
+          <caret line="57" column="26" selection-end-line="71" />
           <folding>
             <element signature="e#184#209#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackRange.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMultiply.h">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackSum.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="25" selection-end-line="48" selection-end-column="2" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMinus.h">
       <provider selected="true" editor-type-id="text-editor">
@@ -601,8 +578,14 @@
           <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
           <folding>
             <element signature="e#197#220#0" expanded="true" />
-            <element signature="e#307#342#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/id_bank.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
@@ -616,35 +599,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackRange.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="26" lean-forward="true" selection-end-line="91" />
+          <folding>
+            <element signature="e#213#238#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMin.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1213">
+          <caret line="74" column="5" lean-forward="true" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+          <folding>
+            <element signature="e#213#238#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMin.h">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#224#247#0" expanded="true" />
+            <element signature="e#350#385#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMax.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackDivide.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/AngleStackSum.h">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackRange.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="29" column="27" lean-forward="true" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+          <folding>
+            <element signature="e#31#54#0" expanded="true" />
+            <element signature="e#157#192#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/Droplet.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-266">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+        <state relative-caret-position="482">
+          <caret line="68" column="53" selection-start-line="68" selection-start-column="53" selection-end-line="68" selection-end-column="53" />
           <folding>
             <element signature="e#191#211#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/Droplet.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/DropletNode.h">
+    <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMultiply.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        <state relative-caret-position="408">
+          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMultiply.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+          <folding>
+            <element signature="e#188#213#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

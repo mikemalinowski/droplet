@@ -1,3 +1,13 @@
+/*
+
+Droplet : FloatStackSum
+
+This takes in a list of values and performs the operation
+sequentially through them.
+
+Author : Mike Malinowski : www.twisted.space
+
+*/
 #pragma once
 
 // Maya Includes

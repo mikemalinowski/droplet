@@ -15,6 +15,9 @@ Author : Mike Malinowski : www.twisted.space
 #include "DropletNode.h"
 #include "../Nodes/Stacks/FloatStackSum.h"
 #include "../Nodes/Stacks/FloatStackMinus.h"
+#include "../Nodes/Stacks/FloatStackRange.h"
+#include "../Nodes/Stacks/FloatStackMin.h"
+#include "../Nodes/Stacks/FloatStackMultiply.h"
 
 // Other Includes
 #include <vector>
@@ -44,6 +47,9 @@ MStatus initializePlugin(MObject obj) {
     MStatus status;
     RegisterNode<FloatStackSum>(plugin);
     RegisterNode<FloatStackMinus>(plugin);
+    RegisterNode<FloatStackRange>(plugin);
+    RegisterNode<FloatStackMin>(plugin);
+    RegisterNode<FloatStackMultiply>(plugin);
 
     return MStatus::kSuccess;
 }
@@ -57,10 +63,10 @@ MStatus uninitializePlugin(MObject obj) {
     MStatus status;
 
     status = plugin.deregisterNode(FloatStackSum::Identifier);
-    CHECK_MSTATUS_AND_RETURN_IT(status);
-
     status = plugin.deregisterNode(FloatStackMinus::Identifier);
-    CHECK_MSTATUS_AND_RETURN_IT(status);
+    status = plugin.deregisterNode(FloatStackRange::Identifier);
+    status = plugin.deregisterNode(FloatStackMin::Identifier);
+    status = plugin.deregisterNode(FloatStackMultiply::Identifier);
 
     return MStatus::kSuccess;
 }
