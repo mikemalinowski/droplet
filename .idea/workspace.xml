@@ -12,17 +12,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4f95317-c5c6-4a97-9ed3-5bf63b7b7f3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMin.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMultiply.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackRange.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackSum.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackDivide.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMax.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/2018/droplet.mll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/2018/droplet.mll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Core/Droplet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Droplet.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMin.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMin.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMultiply.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMultiply.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackRange.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackRange.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackSum.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackSum.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackSum.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackSum.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackDivide.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackDivide.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMax.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMax.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/id_bank.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/id_bank.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -42,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Core/Droplet.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="68" column="53" selection-start-line="68" selection-start-column="53" selection-end-line="68" selection-end-column="53" />
+            <state relative-caret-position="631">
+              <caret line="77" column="48" selection-start-line="77" selection-start-column="48" selection-end-line="77" selection-end-column="48" />
               <folding>
                 <element signature="e#191#211#0" expanded="true" />
               </folding>
@@ -52,56 +51,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMultiply.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMinus.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-              <folding>
-                <element signature="e#186#211#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMin.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-              <folding>
-                <element signature="e#224#247#0" expanded="true" />
-                <element signature="e#350#385#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMin.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1213">
-              <caret line="74" column="5" lean-forward="true" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
-              <folding>
-                <element signature="e#213#238#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMultiply.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+            <state relative-caret-position="340">
+              <caret line="20" column="23" selection-end-line="72" />
               <folding>
                 <element signature="e#188#213#0" expanded="true" />
               </folding>
@@ -110,25 +63,83 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackRange.h">
+        <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackDivide.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="29" column="27" lean-forward="true" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+            <state relative-caret-position="162">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
               <folding>
-                <element signature="e#31#54#0" expanded="true" />
-                <element signature="e#157#192#0" expanded="true" />
+                <element signature="e#186#211#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackRange.cpp">
+        <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackSum.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="26" lean-forward="true" selection-end-line="91" />
+            <state relative-caret-position="561">
+              <caret line="34" column="8" selection-end-line="48" selection-end-column="2" />
               <folding>
-                <element signature="e#213#238#0" expanded="true" />
+                <element signature="e#195#218#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/AngleStackSum.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+              <folding>
+                <element signature="e#195#218#0" expanded="true" />
+                <element signature="e#321#356#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackSum.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="127">
+              <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+              <folding>
+                <element signature="e#184#209#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/AngleStackSum.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="714">
+              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+              <folding>
+                <element signature="e#184#209#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Utilities/Attributes.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="48" column="34" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackDivide.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+              <folding>
+                <element signature="e#198#221#0" expanded="true" />
+                <element signature="e#324#359#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -137,20 +148,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/id_bank.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMinus.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-              <folding>
-                <element signature="e#197#220#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="102">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -167,8 +166,10 @@
       <find>AuxMath</find>
       <find>StackSumFloat</find>
       <find>MFnNumericAttribute</find>
-      <find>FloatStackSum</find>
       <find>MFnPlugin</find>
+      <find>FloatStackMin</find>
+      <find>FloatStackMultiply</find>
+      <find>FloatStackSum</find>
     </findStrings>
     <replaceStrings>
       <replace>/Spaces/</replace>
@@ -176,6 +177,9 @@
       <replace>DropletMath</replace>
       <replace>FloatStackSum</replace>
       <replace>FloatStackMinus</replace>
+      <replace>FloatStackMax</replace>
+      <replace>FloatStackDivide</replace>
+      <replace>AngleStackSum</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -207,25 +211,31 @@
         <option value="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackSum.cpp" />
         <option value="$PROJECT_DIR$/src/Utilities/Attributes.h" />
         <option value="$PROJECT_DIR$/src/Utilities/Math.h" />
-        <option value="$PROJECT_DIR$/src/Utilities/Attributes.cpp" />
         <option value="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMinus.h" />
         <option value="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackSum.h" />
         <option value="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackRange.h" />
         <option value="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackRange.cpp" />
         <option value="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMultiply.h" />
-        <option value="$PROJECT_DIR$/src/id_bank.txt" />
         <option value="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMin.h" />
         <option value="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMin.cpp" />
-        <option value="$PROJECT_DIR$/src/Core/Droplet.cpp" />
         <option value="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMultiply.cpp" />
+        <option value="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMax.cpp" />
+        <option value="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMax.h" />
+        <option value="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackDivide.cpp" />
+        <option value="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackDivide.h" />
+        <option value="$PROJECT_DIR$/src/id_bank.txt" />
+        <option value="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackSum.h" />
+        <option value="$PROJECT_DIR$/src/Core/Droplet.cpp" />
+        <option value="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackSum.cpp" />
+        <option value="$PROJECT_DIR$/src/Utilities/Attributes.cpp" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-11" />
-    <option name="y" value="-11" />
-    <option name="width" value="1939" />
+    <option name="x" value="-12" />
+    <option name="y" value="-12" />
+    <option name="width" value="1941" />
     <option name="height" value="1176" />
   </component>
   <component name="ProjectView">
@@ -350,11 +360,14 @@
       <workItem from="1545306464109" duration="5689000" />
       <workItem from="1545490992205" duration="2774000" />
       <workItem from="1545516063209" duration="3400000" />
+      <workItem from="1545566417879" duration="139000" />
+      <workItem from="1545599023763" duration="32000" />
+      <workItem from="1545833374506" duration="4632000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32426000" />
+    <option name="totallyTimeSpent" value="37229000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -366,10 +379,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1728" height="1117" extended-state="6" />
+    <frame x="-7" y="-7" width="1348" height="1975" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21137725" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4993865" visible="true" weight="0.33074534" />
+      <window_info id="Structure" order="1" sideWeight="0.5006135" side_tool="true" weight="0.21790281" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4994012" weight="0.3296146" />
@@ -379,14 +392,14 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32885906" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info active="true" anchor="bottom" id="Messages" order="8" sideWeight="0.91976047" visible="true" weight="0.30730224" />
+      <window_info active="true" anchor="bottom" id="Messages" order="8" sideWeight="0.9029503" visible="true" weight="0.19587629" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49946696" weight="0.32885906" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.08023952" side_tool="true" visible="true" weight="0.30730224" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.09704969" side_tool="true" visible="true" weight="0.19587629" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="CMake" order="12" sideWeight="0.49946696" weight="0.3279003" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" visible="true" weight="0.378882" />
       <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
@@ -394,15 +407,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Nodes/Spaces/DistanceBetweenMatrices.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Nodes/Spaces/RelativeMatrix.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Nodes/Angles/AngleAdd.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Nodes/Angles/AngleSubtract.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -517,28 +521,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Utilities/Attributes.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-          <folding>
-            <element signature="e#280#304#0" expanded="true" />
-            <element signature="e#618#635#0" expanded="true" />
-            <element signature="e#6420#6429#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/Droplet.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMax.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackDivide.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/AngleStackSum.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/DropletNode.h">
@@ -555,20 +538,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackSum.cpp">
+    <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMultiply.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="57" column="26" selection-end-line="71" />
+        <state relative-caret-position="476">
+          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackRange.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
           <folding>
-            <element signature="e#184#209#0" expanded="true" />
+            <element signature="e#31#54#0" expanded="true" />
+            <element signature="e#157#192#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackSum.h">
+    <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackRange.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="25" selection-end-line="48" selection-end-column="2" />
+        <state relative-caret-position="442">
+          <caret line="26" selection-end-line="91" />
+          <folding>
+            <element signature="e#213#238#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -582,13 +576,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/id_bank.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMinus.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -599,71 +586,133 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackRange.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="26" lean-forward="true" selection-end-line="91" />
-          <folding>
-            <element signature="e#213#238#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMin.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1213">
-          <caret line="74" column="5" lean-forward="true" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
-          <folding>
-            <element signature="e#213#238#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="486">
+          <caret line="47" selection-end-line="85" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMin.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="442">
+          <caret line="30" selection-end-line="48" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMax.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
           <folding>
-            <element signature="e#224#247#0" expanded="true" />
-            <element signature="e#350#385#0" expanded="true" />
+            <element signature="e#183#206#0" expanded="true" />
+            <element signature="e#309#344#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackRange.h">
+    <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMax.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="29" column="27" lean-forward="true" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+        <state relative-caret-position="-263">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
           <folding>
-            <element signature="e#31#54#0" expanded="true" />
-            <element signature="e#157#192#0" expanded="true" />
+            <element signature="e#172#197#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMultiply.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="23" selection-end-line="72" />
+          <folding>
+            <element signature="e#188#213#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackDivide.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#186#211#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackSum.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="34" column="8" selection-end-line="48" selection-end-column="2" />
+          <folding>
+            <element signature="e#195#218#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/id_bank.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackDivide.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+          <folding>
+            <element signature="e#198#221#0" expanded="true" />
+            <element signature="e#324#359#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/Droplet.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="68" column="53" selection-start-line="68" selection-start-column="53" selection-end-line="68" selection-end-column="53" />
+        <state relative-caret-position="631">
+          <caret line="77" column="48" selection-start-line="77" selection-start-column="48" selection-end-line="77" selection-end-column="48" />
           <folding>
             <element signature="e#191#211#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMultiply.h">
+    <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/AngleStackSum.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
+        <state relative-caret-position="272">
           <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+          <folding>
+            <element signature="e#195#218#0" expanded="true" />
+            <element signature="e#321#356#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMultiply.cpp">
+    <entry file="file://$PROJECT_DIR$/src/Utilities/Attributes.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+        <state relative-caret-position="289">
+          <caret line="48" column="34" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackSum.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
           <folding>
-            <element signature="e#188#213#0" expanded="true" />
+            <element signature="e#184#209#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/AngleStackSum.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="e#184#209#0" expanded="true" />
           </folding>
         </state>
       </provider>
