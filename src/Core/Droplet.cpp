@@ -21,6 +21,12 @@ Author : Mike Malinowski : www.twisted.space
 #include "../Nodes/Stacks/FloatStackMultiply.h"
 #include "../Nodes/Stacks/FloatStackDivide.h"
 #include "../Nodes/Stacks/AngleStackSum.h"
+#include "../Nodes/Stacks/AngleStackRange.h"
+#include "../Nodes/Stacks/AngleStackMultiply.h"
+#include "../Nodes/Stacks/AngleStackMinus.h"
+#include "../Nodes/Stacks/AngleStackDivide.h"
+#include "../Nodes/Stacks/AngleStackMin.h"
+#include "../Nodes/Stacks/AngleStackMax.h"
 
 // Other Includes
 #include <vector>
@@ -56,6 +62,12 @@ MStatus initializePlugin(MObject obj) {
     RegisterNode<FloatStackMultiply>(plugin);
     RegisterNode<FloatStackDivide>(plugin);
     RegisterNode<AngleStackSum>(plugin);
+    RegisterNode<AngleStackRange>(plugin);
+    RegisterNode<AngleStackMultiply>(plugin);
+    RegisterNode<AngleStackMinus>(plugin);
+    RegisterNode<AngleStackDivide>(plugin);
+    RegisterNode<AngleStackMin>(plugin);
+    RegisterNode<AngleStackMax>(plugin);
 
     return MStatus::kSuccess;
 }
@@ -76,6 +88,12 @@ MStatus uninitializePlugin(MObject obj) {
     status = plugin.deregisterNode(FloatStackMultiply::Identifier);
     status = plugin.deregisterNode(FloatStackDivide::Identifier);
     status = plugin.deregisterNode(AngleStackSum::Identifier);
+    status = plugin.deregisterNode(AngleStackRange::Identifier);
+    status = plugin.deregisterNode(AngleStackMultiply::Identifier);
+    status = plugin.deregisterNode(AngleStackMinus::Identifier);
+    status = plugin.deregisterNode(AngleStackDivide::Identifier);
+    status = plugin.deregisterNode(AngleStackMin::Identifier);
+    status = plugin.deregisterNode(AngleStackMax::Identifier);
 
     return MStatus::kSuccess;
 }

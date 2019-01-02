@@ -63,8 +63,9 @@ MStatus FloatStackDivide::compute(const MPlug& plug, MDataBlock& dataBlock)
         float value = inputData.inputValue().asFloat();
 
         if (value != 0) {
-            result /= inputData.inputValue().asFloat();
+            value = 0.0000001;
         }
+        result /= value;
     }
 
     dataBlock.outputValue(FloatStackDivide::result).set(result);

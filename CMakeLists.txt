@@ -57,7 +57,7 @@ set(SOURCE_FILES
         src/Nodes/Angles/AngleExponent.h
         src/Nodes/Basic/Exponent.h
         src/Nodes/Stacks/FloatStackSum.cpp
-        src/Core/DropletNode.h src/Nodes/Stacks/FloatStackMinus.cpp src/Utilities/Attributes.cpp src/Nodes/Stacks/FloatStackRange.cpp src/Nodes/Stacks/FloatStackMultiply.cpp src/Nodes/Stacks/FloatStackMin.cpp src/Nodes/Stacks/FloatStackMax.cpp src/Nodes/Stacks/FloatStackDivide.cpp src/Nodes/Stacks/AngleStackSum.cpp)
+        src/Core/DropletNode.h src/Nodes/Stacks/FloatStackMinus.cpp src/Utilities/Attributes.cpp src/Nodes/Stacks/FloatStackRange.cpp src/Nodes/Stacks/FloatStackMultiply.cpp src/Nodes/Stacks/FloatStackMin.cpp src/Nodes/Stacks/FloatStackMax.cpp src/Nodes/Stacks/FloatStackDivide.cpp src/Nodes/Stacks/AngleStackSum.cpp src/Nodes/Stacks/AngleStackRange.cpp src/Nodes/Stacks/AngleStackMultiply.cpp src/Nodes/Stacks/AngleStackMinus.cpp src/Nodes/Stacks/AngleStackDivide.cpp src/Nodes/Stacks/AngleStackMin.cpp src/Nodes/Stacks/AngleStackMax.cpp)
 
 find_package(Maya REQUIRED)
 
