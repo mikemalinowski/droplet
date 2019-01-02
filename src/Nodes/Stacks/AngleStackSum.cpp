@@ -57,18 +57,14 @@ MStatus AngleStackSum::compute(const MPlug& plug, MDataBlock& dataBlock)
     // -- Ensure we're starting the interaction at the beginning
     inputData.jumpToElement(0);
 
-    MGlobal::displayInfo(MString("Starting Evaluation..."));
-
-    double result = 0;
+    double sum_of_inputs = 0;
     for (int i = 0; i < inputData.elementCount(); i++, inputData.next()) {
-        result += inputData.inputValue().asAngle().asDegrees();
-        MGlobal::displayInfo(MString("\tIndividual Angle : ") + inputData.inputValue().asAngle().asDegrees());
+        float _value = inputData.inputValue().asAngle().asDegrees();
+        sum_of_inputs += _value;
     }
 
-    MGlobal::displayInfo(MString("\tFinal Evaluation : ") + result);
-
-    dataBlock.outputValue(AngleStackSum::result).set(MAngle(result, MAngle::kDegrees));
-    //dataBlock.setClean(AngleStackSum::result);
+    dataBlock.outputValue(AngleStackSum::result).set(MAngle(sum_of_inputs, MAngle::kDegrees));
+    dataBlock.setClean(AngleStackSum::result);
 
     return MStatus::kSuccess;
 }
