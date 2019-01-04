@@ -12,23 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4f95317-c5c6-4a97-9ed3-5bf63b7b7f3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackDivide.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMax.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMin.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMinus.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMultiply.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackRange.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/2018/droplet.mll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/2018/droplet.mll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Droplet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Droplet.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackDivide.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackDivide.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMax.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMax.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMin.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMin.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMinus.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMinus.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMultiply.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMultiply.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackRange.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackRange.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackDivide.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackDivide.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/id_bank.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/id_bank.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -109,14 +93,28 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Core/Droplet.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="711">
+            <state relative-caret-position="1173">
               <caret line="69" column="40" lean-forward="true" selection-start-line="69" selection-start-column="40" selection-end-line="69" selection-end-column="40" />
               <folding>
                 <element signature="e#191#211#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="289">
+                <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+              </first_editor>
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
             </state>
           </provider>
         </entry>
@@ -144,23 +142,7 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/id_bank.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMinus.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" selection-end-line="72" />
-              <folding>
-                <element signature="e#186#211#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -243,7 +225,6 @@
         <option value="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackDivide.h" />
         <option value="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackSum.h" />
         <option value="$PROJECT_DIR$/src/Utilities/Attributes.cpp" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackSum.cpp" />
         <option value="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackRange.h" />
         <option value="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackRange.cpp" />
@@ -256,10 +237,11 @@
         <option value="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackDivide.cpp" />
         <option value="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMin.h" />
         <option value="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMin.cpp" />
-        <option value="$PROJECT_DIR$/src/id_bank.txt" />
         <option value="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMax.h" />
         <option value="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMax.cpp" />
         <option value="$PROJECT_DIR$/src/Core/Droplet.cpp" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/id_bank.txt" />
       </list>
     </option>
   </component>
@@ -315,6 +297,13 @@
               <item name="droplet" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Nodes" type="462c0819:PsiDirectoryNode" />
+              <item name="Angles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="droplet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="droplet" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Nodes" type="462c0819:PsiDirectoryNode" />
               <item name="Rigging" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -330,6 +319,20 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Nodes" type="462c0819:PsiDirectoryNode" />
               <item name="Stacks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="droplet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="droplet" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Nodes" type="462c0819:PsiDirectoryNode" />
+              <item name="Utility" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="droplet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="droplet" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Nodes" type="462c0819:PsiDirectoryNode" />
+              <item name="Vectors" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="droplet" type="b2602c69:ProjectViewProjectNode" />
@@ -398,12 +401,12 @@
       <workItem from="1545833374506" duration="4632000" />
       <workItem from="1546360121880" duration="223000" />
       <workItem from="1546360385910" duration="288000" />
-      <workItem from="1546360825142" duration="7818000" />
+      <workItem from="1546360825142" duration="10610000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45558000" />
+    <option name="totallyTimeSpent" value="48350000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -416,9 +419,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2015" height="1308" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4993865" visible="true" weight="0.34168798" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4993865" visible="true" weight="0.17289002" />
       <window_info id="Structure" order="1" sideWeight="0.5006135" side_tool="true" weight="0.21790281" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -429,7 +431,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32885906" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info active="true" anchor="bottom" id="Messages" order="8" sideWeight="0.5043478" visible="true" weight="0.19557823" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.5043478" visible="true" weight="0.19557823" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49946696" weight="0.32885906" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.49565217" side_tool="true" visible="true" weight="0.19557823" />
       <window_info anchor="bottom" id="Version Control" order="11" />
@@ -550,23 +552,6 @@
             <element signature="e#198#221#0" expanded="true" />
             <element signature="e#324#359#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="272">
-            <caret line="16" column="133" selection-start-line="16" selection-start-column="133" selection-end-line="16" selection-end-column="133" />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
@@ -802,13 +787,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/id_bank.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMax.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
@@ -842,11 +820,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/Droplet.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="711">
+        <state relative-caret-position="1173">
           <caret line="69" column="40" lean-forward="true" selection-start-line="69" selection-start-column="40" selection-end-line="69" selection-end-column="40" />
           <folding>
             <element signature="e#191#211#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/id_bank.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="289">
+            <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>

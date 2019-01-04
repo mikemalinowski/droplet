@@ -7,6 +7,41 @@ Droplet is a mixture of some pretty old code - spruced and tidied - along with s
 
 As the repository matures and becomes stable I'll update this page to reflect which parts are reliable and not subject to change.
 
+Nodes
+=====
+
+Stacks
+------
+
+The idea behind stacks are to be able to perform basic arithmetic on multiple values simultaneously. These types of operations - such as calculating the sum of more than two values - typically require you to create multiple built-in nodes and chain the results together. Stacks mitigate this by allowing you to input as many values as required.
+
+Droplet has took the approach of not utilising an operator attribute to define the behaviour of the node. Instead droplet opts for implementing the different operations as completely different nodes for the following reasons:
+
+* At-a-glance understanding of what a node is doing
+* Less code required to generate behaviours (no need to set operator attributes)
+* Easier to read code - no 'node.operation.set(2)' - where the value is meaningless without ingrained knowledge
+* Less complexity within the compute function of any individual node
+
+Stacks come in two different flavours - floats or angles. Using angle stacks are useful when wanting to operate on rotations but want to avoid increased graph complexity of unit conversion nodes.
+
+Stack Node List:
+
+    FloatStackSum : Adds all the inputs together
+    FloatStackMinus : Negates each number from the last negation
+    FloatStackMul : Multiplies each input value together
+    FloatStackDivide : Divides each value in sequence from one-another
+    FloatStackRange : Returns the range between the maximum and minimum value
+    FloatStackMin : Returns the smallest value of all the inputs
+    FloatStackMax : Returns the largest value of all the inputs
+    FloatStackSum : Adds all the inputs together
+    AngleStackMinus : Negates each number from the last negation
+    AngleStackMul : Multiplies each input value together
+    AngleStackDivide : Divides each value in sequence from one-another
+    AngleStackRange : Returns the range between the maximum and minimum value
+    AngleStackMin : Returns the smallest value of all the inputs
+    AngleStackMax : Returns the largest value of all the inputs
+
+
 Compiled Plug-ins
 =================
 
