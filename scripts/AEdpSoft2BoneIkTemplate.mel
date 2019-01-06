@@ -7,20 +7,21 @@ global proc AEdpSoft2BoneIkFunctionality(string $nodeName){
 
 	// -- Get the name of the node
     $nodeName = AEdpExtractNodeName($nodeName);
-	
+	text -wordWrap true -align "center" -label "Soft Ik allows the bones within a chain to stretch slightly in order to prevent the acceleration of the mid joint as the two bones close toward a parallel line.\n\nNOTE: This solver is for two bone IK only.";
+	separator -height 20 -style "none";
+
 	// -- Add our utility buttons which make it a little easier to
 	// -- interact with
+	text -label "These allow you to set the two objects which are used for measuring distances" -align "center";
     button -label ("Set Root [" + AEdpGetDrivingName($nodeName + ".rootTarget") + "]") -backgroundColor 0.98 0.48 0.1 -command ("AEdpSoftIkSetRoot(\"" + $nodeName + "\")") setRootButton;
     button -label ("Set Effector [" + AEdpGetDrivingName($nodeName + ".effectorTarget") + "]") -backgroundColor 0.98 0.48 0.1 -command ("AEdpSoftIkSetEffector(\"" + $nodeName + "\")") setEffectorButton;
-	
-	columnLayout;
-		rowLayout -nc 2 -cw 2 60 
-			button -label "Connect To Joints" -backgroundColor 0.98 0.48 0.1;
-			button -label "Define Default Lengths" -backgroundColor 0.98 0.48 0.1;
-		setParent..;
-		
-		textScrollList -numberOfRows 3 -allowMultiSelection true -append "x" -append "y" -append "z" jointAxis;
-	//setParent..;
+
+    separator -height 20 -style "none";
+    text -label "These connect the Soft Ik to the desired joints and assign the default length values" -align "center";
+    button -label "Set First Output Joint" -backgroundColor 1 0.58 0.2 -command ("AEdpSoftIkSetFirstOutputJoint(\"" + $nodeName + "\")") setFirstOutputJointButton;
+    button -label "Set Second Output Joint" -backgroundColor 1 0.58 0.2 -command ("AEdpSoftIkSetSecondOutputJoint(\"" + $nodeName + "\")") setSecondOutputJointButton;
+
+    separator -height 20 -style "none";
 }
 
 
@@ -34,7 +35,10 @@ global proc AEdpSoft2BoneIkFunctionalityReplace(string $nodeName){
 
     button -e -label ("Set Root [" + AEdpGetDrivingName($nodeName + ".rootTarget") + "]") -c ("AEdpSoftIkSetRoot(\"" + $nodeName + "\")") setRootButton;
     button -e -label ("Set Effector [" + AEdpGetDrivingName($nodeName + ".effectorTarget") + "]") -c ("AEdpSoftIkSetRoot(\"" + $nodeName + "\")") setEffectorButton;
-    print("\nReplacing Functionality : " + $nodeName);
+
+    button -e -command ("AEdpSoftIkSetFirstOutputJoint(\"" + $nodeName + "\")") setFirstOutputJointButton;
+    button -e -command ("AEdpSoftIkSetSecondOutputJoint(\"" + $nodeName + "\")") setSecondOutputJointButton;
+
 	return;
 }
 
@@ -63,24 +67,48 @@ global proc AEdpSoftIkSetEffector(string $nodeName){
 
 
 // --------------------------------------------------------------------------------
+// Connects the first bone length calculation to the selected joint
+global proc AEdpSoftIkSetFirstOutputJoint(string $nodeName){
+    string $joint = AEdpGetSelectedNode($nodeName);
+
+    float $defaultLength = `getAttr ($joint + ".translate" + getFacingAxis($joint))`;
+    setAttr ($nodeName + ".firstBoneLength") $defaultLength;
+
+    connectAttr -f ($nodeName + ".firstBoneResult") ($joint + ".translate" + getFacingAxis($joint)) ;
+}
+
+
+// --------------------------------------------------------------------------------
+// Connects the first bone length calculation to the selected joint
+global proc AEdpSoftIkSetSecondOutputJoint(string $nodeName){
+    string $joint = AEdpGetSelectedNode($nodeName);
+
+    float $defaultLength = `getAttr ($joint + ".translate" + getFacingAxis($joint))`;
+    setAttr ($nodeName + ".secondBoneLength") $defaultLength;
+
+    connectAttr -f ($nodeName + ".secondBoneResult") ($joint + ".translate" + getFacingAxis($joint)) ;
+}
+
+
+// --------------------------------------------------------------------------------
 // Constructs the attribute editor template for the Soft2BoneIk Node.
 global proc AEdpSoft2BoneIkTemplate( string $nodeName ){
     // -- Pull out the node name
     string $parts[];
     tokenize($nodeName, ".", $parts);
     $nodeName = $parts[0];
-    print("\nPart : " + $nodeName);
 
     editorTemplate -beginScrollLayout;
 
-	        editorTemplate -callCustom AEdpBrandingNew("aeSumFloatStack.png") AEdpBrandingReplace;
+	        editorTemplate -callCustom AEdpBrandingNew AEdpBrandingReplace "aeSoft2BoneIk.png";
 	        editorTemplate -callCustom AEdpSoft2BoneIkFunctionality AEdpSoft2BoneIkFunctionalityReplace $parts[0];
 
 			editorTemplate -addControl "stretch";
 			editorTemplate -addControl "softDistance";
+			editorTemplate -addControl "firstBoneLength";
+			editorTemplate -addControl "secondBoneLength";
 			
     editorTemplate -addExtraControls;
 
     editorTemplate -endScrollLayout;
-	print(999);
 }

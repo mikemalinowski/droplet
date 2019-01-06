@@ -65,7 +65,7 @@ add_library(droplet SHARED ${SOURCE_FILES})
 target_link_libraries(droplet PRIVATE Maya::Maya)
 target_include_directories(droplet PRIVATE Maya::Maya)
 set_target_properties(droplet PROPERTIES
-    RUNTIME_OUTPUT_DIRECTORY_RELEASE ${CMAKE_CURRENT_SOURCE_DIR}/bin/${MAYA_VERSION})
+    RUNTIME_OUTPUT_DIRECTORY_RELEASE ${CMAKE_CURRENT_SOURCE_DIR}/plug-ins)
 
 MAYA_PLUGIN(droplet)
 

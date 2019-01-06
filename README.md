@@ -41,6 +41,14 @@ Stack Node List:
     AngleStackMin : Returns the smallest value of all the inputs
     AngleStackMax : Returns the largest value of all the inputs
 
+Rigging
+-------
+
+This holds a series of nodes which implement common rigging paradigms. The goal here is to minimise node complexity and repetition.
+
+Rigging Node List:
+
+    Soft2BoneIk : This takes in two world transforms and calculates the bone lengths for a 2 bone (3 joint) chain. Soft Ik prevents the ik snap which can occur during hyper extension
 
 Compiled Plug-ins
 =================
