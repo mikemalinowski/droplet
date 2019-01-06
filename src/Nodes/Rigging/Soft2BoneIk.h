@@ -17,10 +17,17 @@ Author : Mike Malinowski : www.twisted.space
 #include <maya/MPlug.h>
 #include <maya/MStatus.h>
 
+// Droplet Includes
+#include "../../Core/DropletNode.h"
+#include "../../Utilities/Attributes.h"
+
 // Create a node class
-class Soft2BoneIk : public MPxNode
+class Soft2BoneIk : public DropletNode
 {
 public:
+
+	static const int Identifier = 0x00117fce;
+	static const char* NodeName() { return "Soft2BoneIk"; }
 
 	//-------------------------------------------
 	// Returns a new instance of this

@@ -1,0 +1,69 @@
+
+
+// --------------------------------------------------------------------------------
+// Returns the first node which is driving the given attribute. This
+// is particularly useful when wanting to show the node driving something.
+// If nothing is driving the given attribute then the string "None" is
+// returned.
+global proc string AEdpGetDrivingName(string $attr) {
+    string $inputs[] = `listConnections $attr`;
+
+    if (size($inputs)) {
+        return $inputs[0];
+    }
+    return "None";
+}
+
+
+// --------------------------------------------------------------------------------
+// This will return the first selected node which is not the given
+// skip node. This is useful when wanting to get a selected node which
+// is not the node represented by an attribute editor panel.
+global proc string AEdpGetSelectedNode(string $skip) {
+    string $selected[] = `ls -sl`;
+    for ($i = 0; $i < size($selected); $i++) {
+        if ($selected[$i] != $skip) {
+            return $selected[$i];
+        }
+    }
+}
+
+
+// --------------------------------------------------------------------------------
+// This takes in the given data and splits it by "." - the first element is 
+// then taken to be the node name.
+global proc string AEdpExtractNodeName(string $data){
+    string $parts[];
+    tokenize($data, ".", $parts);
+    return $parts[0];
+}
+
+
+// --------------------------------------------------------------------------------
+// This will create the branding panel which all Droplet nodes utilise.
+// Primarily it adds the droplet banner. You can specify which banner to
+// use by passing it as the icon variable.
+global proc AEdpBrandingNew(string $icon){
+
+	setUITemplate -pushTemplate attributeEditorTemplate;
+
+    columnLayout -adjustableColumn true;
+
+        rowLayout -numberOfColumns 3;
+            image -image "aeSumFloatStack.png" -width 400 -height 100;
+			setParent ..;
+        setParent ..;
+    setParent ..;
+
+    setUITemplate -popTemplate;
+	
+	print("\nSetup Branding");
+}
+
+
+// --------------------------------------------------------------------------------
+// This is the replacement method for the branding. However, the branding
+// never changes so we do not need to edit it.
+global proc AEdpBrandingReplace()
+{
+}

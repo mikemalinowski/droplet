@@ -1,0 +1,86 @@
+source AEdpUtilities;
+
+
+// --------------------------------------------------------------------------------
+// This builds the ui elements for the Soft2BoneIk node
+global proc AEdpSoft2BoneIkFunctionality(string $nodeName){
+
+	// -- Get the name of the node
+    $nodeName = AEdpExtractNodeName($nodeName);
+	
+	// -- Add our utility buttons which make it a little easier to
+	// -- interact with
+    button -label ("Set Root [" + AEdpGetDrivingName($nodeName + ".rootTarget") + "]") -backgroundColor 0.98 0.48 0.1 -command ("AEdpSoftIkSetRoot(\"" + $nodeName + "\")") setRootButton;
+    button -label ("Set Effector [" + AEdpGetDrivingName($nodeName + ".effectorTarget") + "]") -backgroundColor 0.98 0.48 0.1 -command ("AEdpSoftIkSetEffector(\"" + $nodeName + "\")") setEffectorButton;
+	
+	columnLayout;
+		rowLayout -nc 2 -cw 2 60 
+			button -label "Connect To Joints" -backgroundColor 0.98 0.48 0.1;
+			button -label "Define Default Lengths" -backgroundColor 0.98 0.48 0.1;
+		setParent..;
+		
+		textScrollList -numberOfRows 3 -allowMultiSelection true -append "x" -append "y" -append "z" jointAxis;
+	//setParent..;
+}
+
+
+// --------------------------------------------------------------------------------
+// Triggered whenever the Attribute Panel needs to be refreshed. This will
+// update all the buttons with the new command calls and also update the 
+// button labels to ensure they show the right input information for the 
+// given soft ik node
+global proc AEdpSoft2BoneIkFunctionalityReplace(string $nodeName){
+    $nodeName = AEdpExtractNodeName($nodeName);
+
+    button -e -label ("Set Root [" + AEdpGetDrivingName($nodeName + ".rootTarget") + "]") -c ("AEdpSoftIkSetRoot(\"" + $nodeName + "\")") setRootButton;
+    button -e -label ("Set Effector [" + AEdpGetDrivingName($nodeName + ".effectorTarget") + "]") -c ("AEdpSoftIkSetRoot(\"" + $nodeName + "\")") setEffectorButton;
+    print("\nReplacing Functionality : " + $nodeName);
+	return;
+}
+
+
+// --------------------------------------------------------------------------------
+// This will take the first selected node which is not a soft ik node and
+// connnect the worldMatrix attribute to the rootTarget attribute.
+global proc AEdpSoftIkSetRoot(string $nodeName){
+    string $root = AEdpGetSelectedNode($nodeName);
+    connectAttr -f ($root + ".worldMatrix") ($nodeName + ".rootTarget");
+
+    button -e -label ("Set Root [" + AEdpGetDrivingName($nodeName + ".rootTarget") + "]") setRootButton;
+}
+
+
+// --------------------------------------------------------------------------------
+// This will take the first selected node which is not a soft ik node and
+// connnect the worldMatrix attribute to the effectorTarget attribute.
+
+global proc AEdpSoftIkSetEffector(string $nodeName){
+    string $effector = AEdpGetSelectedNode($nodeName);
+    connectAttr -f ($effector + ".worldMatrix") ($nodeName + ".effectorTarget");
+	
+    button -e -label ("Set Effector [" + AEdpGetDrivingName($nodeName + ".effectorTarget") + "]") setEffectorButton;
+}
+
+
+// --------------------------------------------------------------------------------
+// Constructs the attribute editor template for the Soft2BoneIk Node.
+global proc AEdpSoft2BoneIkTemplate( string $nodeName ){
+    // -- Pull out the node name
+    string $parts[];
+    tokenize($nodeName, ".", $parts);
+    $nodeName = $parts[0];
+    print("\nPart : " + $nodeName);
+
+    editorTemplate -beginScrollLayout;
+
+	        editorTemplate -callCustom AEdpBrandingNew("aeSumFloatStack.png") AEdpBrandingReplace;
+	        editorTemplate -callCustom AEdpSoft2BoneIkFunctionality AEdpSoft2BoneIkFunctionalityReplace $parts[0];
+
+			editorTemplate -addControl "stretch";
+			editorTemplate -addControl "softDistance";
+			
+    editorTemplate -addExtraControls;
+
+    editorTemplate -endScrollLayout;
+	print(999);
+}
