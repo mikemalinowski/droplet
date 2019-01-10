@@ -36,9 +36,11 @@ MObject Soft2BoneIk::AdditionalSecondBoneStretch;
 
 MObject Soft2BoneIk::RootTarget;
 MObject Soft2BoneIk::EffectorTarget;
+MObject Soft2BoneIk::PinTarget;
 
 MObject Soft2BoneIk::Stretch;
 MObject Soft2BoneIk::SoftDistance;
+MObject Soft2BoneIk::Pin;
 
 // Attribute Outputs
 MObject Soft2BoneIk::FirstBoneResult;
@@ -87,6 +89,10 @@ MStatus Soft2BoneIk::initialize()
 	matrixAttrFn.setKeyable(true);
 	CHECK_MSTATUS_AND_RETURN(addAttribute(Soft2BoneIk::EffectorTarget), MStatus::kFailure);
 
+	Soft2BoneIk::PinTarget = matrixAttrFn.create("pinTarget", "pta");
+	matrixAttrFn.setKeyable(true);
+	CHECK_MSTATUS_AND_RETURN(addAttribute(Soft2BoneIk::PinTarget), MStatus::kFailure);
+
 	// Add the animation sliders
 	Soft2BoneIk::Stretch = numericAttrFn.create("stretch", "str", MFnNumericData::kDouble);
 	numericAttrFn.setKeyable(true);
@@ -96,6 +102,11 @@ MStatus Soft2BoneIk::initialize()
 	Soft2BoneIk::SoftDistance = numericAttrFn.create("softDistance", "sdt", MFnNumericData::kDouble);
 	numericAttrFn.setKeyable(true);
 	CHECK_MSTATUS_AND_RETURN(addAttribute(Soft2BoneIk::SoftDistance), MStatus::kFailure);
+
+	// Add the soft IK atttributes
+	Soft2BoneIk::Pin = numericAttrFn.create("pin", "pin", MFnNumericData::kDouble);
+	numericAttrFn.setKeyable(true);
+	CHECK_MSTATUS_AND_RETURN(addAttribute(Soft2BoneIk::Pin), MStatus::kFailure);
 
 	// Now add the output attributes
 	Soft2BoneIk::FirstBoneResult = numericAttrFn.create("firstBoneResult", "fbr", MFnNumericData::kDouble);
@@ -116,6 +127,8 @@ MStatus Soft2BoneIk::initialize()
 	attributeAffects(Soft2BoneIk::EffectorTarget, Soft2BoneIk::FirstBoneResult);
 	attributeAffects(Soft2BoneIk::Stretch, Soft2BoneIk::FirstBoneResult);
 	attributeAffects(Soft2BoneIk::SoftDistance, Soft2BoneIk::FirstBoneResult);
+	attributeAffects(Soft2BoneIk::Pin, Soft2BoneIk::FirstBoneResult);
+	attributeAffects(Soft2BoneIk::PinTarget, Soft2BoneIk::FirstBoneResult);
 
 	attributeAffects(Soft2BoneIk::FirstBoneLength, Soft2BoneIk::SecondBoneResult);
 	attributeAffects(Soft2BoneIk::SecondBoneLength, Soft2BoneIk::SecondBoneResult);
@@ -125,6 +138,8 @@ MStatus Soft2BoneIk::initialize()
 	attributeAffects(Soft2BoneIk::EffectorTarget, Soft2BoneIk::SecondBoneResult);
 	attributeAffects(Soft2BoneIk::Stretch, Soft2BoneIk::SecondBoneResult);
 	attributeAffects(Soft2BoneIk::SoftDistance, Soft2BoneIk::SecondBoneResult);
+	attributeAffects(Soft2BoneIk::Pin, Soft2BoneIk::SecondBoneResult);
+	attributeAffects(Soft2BoneIk::PinTarget, Soft2BoneIk::SecondBoneResult);
 
 	return MS::kSuccess;
 }
@@ -142,8 +157,10 @@ MStatus Soft2BoneIk::compute(const MPlug& plug, MDataBlock& dataBlock)
 	// -- Get the normal bone lengths to allow us to determine
 	// -- how much (if any) stretch should occur. We then add
 	// -- the static additions onto it
-	double firstBoneLength = (dataBlock.inputValue(Soft2BoneIk::FirstBoneLength).asDouble()) + upperAddition;
-	double secondBoneLength = (dataBlock.inputValue(Soft2BoneIk::SecondBoneLength).asDouble()) + lowerAddition;
+	double firstBoneValue = (dataBlock.inputValue(Soft2BoneIk::FirstBoneLength).asDouble()) + upperAddition;
+	double secondBoneValue = (dataBlock.inputValue(Soft2BoneIk::SecondBoneLength).asDouble()) + lowerAddition;
+	double firstBoneLength = abs(firstBoneValue);
+	double secondBoneLength = abs(secondBoneValue);
 
 	// -- Check how far this two bone chain should actually be
 	// -- able to stretch to
@@ -187,10 +204,51 @@ MStatus Soft2BoneIk::compute(const MPlug& plug, MDataBlock& dataBlock)
 		// -- Add the softening to the additions
 		upperAddition += ((firstBoneLength * scale) - firstBoneLength) * stretchFactor;
 		lowerAddition += ((secondBoneLength * scale) - secondBoneLength) * stretchFactor;
+
 	}
+
+	// -- Now we check for pinning
+	double upperPinAddition = 0;
+	double lowerPinAddition = 0;
+	double pinning = dataBlock.inputValue(Soft2BoneIk::Pin).asDouble();
+
+	if (pinning != 0)
+	{
+		// -- Get the worldspace position of the pin object
+		MMatrix pinMatrix = dataBlock.inputValue(Soft2BoneIk::PinTarget).asMatrix();
+		MVector pinPosition(pinMatrix[3][0], pinMatrix[3][1], pinMatrix[3][2]);
+
+		upperPinAddition = MVector(rootPosition - pinPosition).length() - firstBoneLength;
+		lowerPinAddition = MVector(effectorPosition - pinPosition).length() - secondBoneLength;
+
+		// -- Determine what the additive difference is to apply
+		// -- the pinning
+		upperPinAddition *= pinning;
+		lowerPinAddition *= pinning;
+
+		// -- Share the pinning and the stretch to ensure we
+		// -- do not get a doubling of the result
+		upperAddition *= 1.0 - pinning;
+		lowerAddition *= 1.0 - pinning;
+	}
+
+	// -- Resolve the final values and ensure we use the
+	// -- correct inversion values based on the expected
+	// -- default lengths
+	double resolvedFirstBone = firstBoneLength + upperAddition + upperPinAddition;
+	double resolvedSecondBone = secondBoneLength + lowerAddition + lowerPinAddition;
+
+		if (firstBoneValue < 0.0) {
+			resolvedFirstBone *= -1;
+		}
+
+		if (secondBoneValue < 0.0) {
+			resolvedSecondBone *= -1;
+		}
+
 	// -- Assign the output values
-	dataBlock.outputValue(Soft2BoneIk::FirstBoneResult).set(firstBoneLength + upperAddition);
-	dataBlock.outputValue(Soft2BoneIk::SecondBoneResult).set(secondBoneLength + lowerAddition);
+	dataBlock.outputValue(Soft2BoneIk::FirstBoneResult).set(resolvedFirstBone);
+	dataBlock.outputValue(Soft2BoneIk::SecondBoneResult).set(resolvedSecondBone);
 	
 	// -- Mark the two attributes as being clean (solved)
 	dataBlock.setClean(Soft2BoneIk::FirstBoneResult);

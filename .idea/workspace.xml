@@ -12,14 +12,74 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4f95317-c5c6-4a97-9ed3-5bf63b7b7f3f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/2018/droplet.mll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/2018/droplet.mll.manifest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plug-ins/droplet-win64-2018.mll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/AEdpSoft2BoneIkTemplate.mel" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/AEdpSoft2BoneIkTemplate.mel" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/AEdpUtilities.mel" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/AEdpUtilities.mel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plug-ins/droplet.mll" beforeDir="false" afterPath="$PROJECT_DIR$/plug-ins/droplet.mll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Droplet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Droplet.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/DropletNode.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/DropletNode.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Angles/AngleAdd.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Angles/AngleAdd.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Angles/AngleClamp.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Angles/AngleClamp.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Angles/AngleDivide.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Angles/AngleDivide.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Angles/AngleExponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Angles/AngleExponent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Angles/AngleMultiply.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Angles/AngleMultiply.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Angles/AnglePower.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Angles/AnglePower.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Angles/AngleRange.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Angles/AngleRange.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Angles/AngleSqrt.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Angles/AngleSqrt.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Angles/AngleSubtract.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Angles/AngleSubtract.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Basic/Exponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Basic/Exponent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Basic/Power.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Basic/Power.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Basic/Sqrt.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Basic/Sqrt.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Interpolation/InterpolateAngleVectors.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Interpolation/InterpolateAngleVectors.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Interpolation/InterpolateAngles.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Interpolation/InterpolateAngles.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Interpolation/InterpolateFloatVectors.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Interpolation/InterpolateFloatVectors.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Interpolation/InterpolateFloats.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Interpolation/InterpolateFloats.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Interpolation/InterpolateMatrices.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Interpolation/InterpolateMatrices.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Interpolation/InterpolateQuaternions.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Interpolation/InterpolateQuaternions.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Rigging/QuaternionTwist.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Rigging/QuaternionTwist.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Rigging/QuaternionTwist.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Rigging/QuaternionTwist.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Rigging/Soft2BoneIk.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Rigging/Soft2BoneIk.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Rigging/Soft2BoneIk.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Rigging/Soft2BoneIk.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Spaces/DistanceBetweenMatrices.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Spaces/DistanceBetweenMatrices.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Spaces/DistanceBetweenVectors.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Spaces/DistanceBetweenVectors.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Spaces/RelativeMatrix.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Spaces/RelativeMatrix.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackDivide.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackDivide.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackDivide.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackDivide.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMax.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMax.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMax.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMax.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMin.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMin.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMin.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMin.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMinus.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMinus.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMinus.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMinus.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMultiply.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMultiply.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMultiply.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMultiply.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackRange.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackRange.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackRange.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackRange.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackSum.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackSum.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackSum.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackSum.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackDivide.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackDivide.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackDivide.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackDivide.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMax.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMax.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMax.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMax.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMin.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMin.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMin.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMin.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMinus.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMinus.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMinus.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMinus.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMultiply.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMultiply.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMultiply.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMultiply.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackRange.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackRange.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackRange.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackRange.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackSum.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackSum.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackSum.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Stacks/FloatStackSum.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Utility/FloatOpCompound.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Utility/FloatOpCompound.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Utility/FloatOpCompound.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Utility/FloatOpCompound.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Vectors/AngleVectorAdd.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Vectors/AngleVectorAdd.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Vectors/AngleVectorDivide.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Vectors/AngleVectorDivide.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Vectors/AngleVectorScale.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Vectors/AngleVectorScale.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Vectors/FloatVectorAdd.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Vectors/FloatVectorAdd.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Vectors/FloatVectorDivide.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Vectors/FloatVectorDivide.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nodes/Vectors/FloatVectorScale.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nodes/Vectors/FloatVectorScale.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utilities/Attributes.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utilities/Attributes.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utilities/Attributes.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utilities/Attributes.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utilities/Math.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utilities/Math.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/id_bank.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/id_bank.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/CMakeFiles/" />
@@ -44,11 +104,71 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="51">
+                <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+              </first_editor>
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Core/Droplet.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="50" column="182" selection-start-line="50" selection-start-column="182" selection-end-line="50" selection-end-column="182" />
+            <state relative-caret-position="635">
+              <caret line="101" column="7" selection-start-line="101" selection-start-column="7" selection-end-line="101" selection-end-column="7" />
+              <folding>
+                <element signature="e#191#211#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Nodes/Rigging/FootPivot.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="50" column="24" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Nodes/Rigging/FootPivot.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="74">
+              <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Nodes/Rigging/QuaternionTwist.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="189" column="38" selection-start-line="189" selection-start-column="38" selection-end-line="189" selection-end-column="38" />
+              <folding>
+                <element signature="e#272#297#0" expanded="true" />
+                <element signature="e#680#713#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Nodes/Rigging/Soft2BoneIk.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="53" selection-end-column="1" />
+              <folding>
+                <element signature="e#394#419#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -66,7 +186,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/AEdpUtilities.mel">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="671">
+            <state relative-caret-position="1700">
               <caret line="100" column="31" selection-start-line="100" selection-start-column="31" selection-end-line="100" selection-end-column="31" />
             </state>
           </provider>
@@ -131,7 +251,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Nodes/Stacks/StackSumFloat.h" />
         <option value="$PROJECT_DIR$/src/Core/droplet.cpp" />
         <option value="$PROJECT_DIR$/src/Nodes/Utility/FloatOpCompound.cpp" />
         <option value="$PROJECT_DIR$/src/Nodes/Rigging/QuaternionTwist.cpp" />
@@ -175,13 +294,14 @@
         <option value="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMin.cpp" />
         <option value="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMax.h" />
         <option value="$PROJECT_DIR$/src/Nodes/Stacks/AngleStackMax.cpp" />
-        <option value="$PROJECT_DIR$/src/Core/Droplet.cpp" />
         <option value="$PROJECT_DIR$/src/id_bank.txt" />
         <option value="$PROJECT_DIR$/src/Nodes/Rigging/Soft2BoneIk.h" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/scripts/AEdpUtilities.mel" />
         <option value="$PROJECT_DIR$/scripts/AEdpSoft2BoneIkTemplate.mel" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/Nodes/Rigging/FootPivot.cpp" />
+        <option value="$PROJECT_DIR$/src/Core/Droplet.cpp" />
       </list>
     </option>
   </component>
@@ -204,6 +324,30 @@
             <path>
               <item name="droplet" type="b2602c69:ProjectViewProjectNode" />
               <item name="droplet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="droplet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="droplet" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="droplet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="droplet" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="droplet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="droplet" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Nodes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="droplet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="droplet" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Nodes" type="462c0819:PsiDirectoryNode" />
+              <item name="Rigging" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -273,11 +417,12 @@
       <workItem from="1546360825142" duration="10610000" />
       <workItem from="1546632680185" duration="17125000" />
       <workItem from="1546792031657" duration="8045000" />
+      <workItem from="1547142401007" duration="316000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73520000" />
+    <option name="totallyTimeSpent" value="73836000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -289,9 +434,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="2015" height="1308" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4993865" visible="true" weight="0.17567568" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4993865" visible="true" weight="0.1774936" />
       <window_info id="Structure" order="1" sideWeight="0.5006135" side_tool="true" weight="0.21790281" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -302,9 +448,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32885906" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.5035771" visible="true" weight="0.19501625" />
+      <window_info active="true" anchor="bottom" id="Messages" order="8" sideWeight="0.656266" visible="true" weight="0.28911564" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49946696" weight="0.32885906" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.4964229" side_tool="true" visible="true" weight="0.19501625" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.34373403" side_tool="true" visible="true" weight="0.28911564" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="CMake" order="12" sideWeight="0.49946696" weight="0.3279003" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -317,20 +463,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Program Files/Autodesk/Maya2018/include/maya/MDataHandle.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="248" column="33" selection-start-line="248" selection-start-column="17" selection-end-line="248" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMultiply.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Nodes/Stacks/FloatStackMinus.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -419,17 +551,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Nodes/Spaces/DistanceBetweenVectors.h">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Nodes/Rigging/QuaternionTwist.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="189" column="38" selection-start-line="189" selection-start-column="38" selection-end-line="189" selection-end-column="38" />
-          <folding>
-            <element signature="e#272#297#0" expanded="true" />
-            <element signature="e#680#713#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Nodes/Rigging/QuaternionTwist.h">
       <provider selected="true" editor-type-id="text-editor" />
@@ -617,16 +738,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/Droplet.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="796">
-          <caret line="98" column="46" selection-start-line="98" selection-start-column="46" selection-end-line="98" selection-end-column="46" />
-          <folding>
-            <element signature="e#191#211#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/icons/aeSumFloatStack.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -681,19 +792,17 @@
     <entry file="file://$PROJECT_DIR$/icons/out_dpSoft2BoneIk.psd">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Nodes/Rigging/Soft2BoneIk.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-765">
-          <folding>
-            <element signature="e#394#419#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="67" column="73" selection-start-line="67" selection-start-column="73" selection-end-line="67" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/AEdpSoft2BoneIkTemplate.mel">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -705,22 +814,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/AEdpUtilities.mel">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="671">
+        <state relative-caret-position="1700">
           <caret line="100" column="31" selection-start-line="100" selection-start-column="31" selection-end-line="100" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/AEdpSoft2BoneIkTemplate.mel">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="50" column="182" selection-start-line="50" selection-start-column="182" selection-end-line="50" selection-end-column="182" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="51">
+            <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/src/Nodes/Rigging/QuaternionTwist.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" column="182" selection-start-line="50" selection-start-column="182" selection-end-line="50" selection-end-column="182" />
+        <state relative-caret-position="184">
+          <caret line="189" column="38" selection-start-line="189" selection-start-column="38" selection-end-line="189" selection-end-column="38" />
+          <folding>
+            <element signature="e#272#297#0" expanded="true" />
+            <element signature="e#680#713#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Nodes/Rigging/Soft2BoneIk.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="53" selection-end-column="1" />
+          <folding>
+            <element signature="e#394#419#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Nodes/Rigging/FootPivot.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Nodes/Rigging/FootPivot.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="50" column="24" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/Droplet.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="635">
+          <caret line="101" column="7" selection-start-line="101" selection-start-column="7" selection-end-line="101" selection-end-column="7" />
+          <folding>
+            <element signature="e#191#211#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

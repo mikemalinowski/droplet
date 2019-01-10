@@ -53,12 +53,14 @@ public:
 	// Matrix Parameters
 	static MObject RootTarget;
 	static MObject EffectorTarget;
+    static MObject PinTarget;
 
 	// Animation Sliders
 	static MObject Stretch;
 
 	// Soft IK attributes
 	static MObject SoftDistance;
+	static MObject Pin;
 
 	// Output Attributes
 	static MObject FirstBoneResult;
