@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8B854D35-8E28-47F5-8251-D33611238B49}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetExt>.mll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetExt>.mll</TargetExt>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;DROPLET_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;DROPLET_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files\Autodesk\Maya2018\include</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;WIN32;_WINDOWS;_USRDLL;NT_PLUGIN;_HAS_ITERATOR_DEBUGGING=0;_SECURE_SCL=0;_SECURE_SCL_THROWS=0;_SECURE_SCL_DEPRECATE=0;_CRT_SECURE_NO_DEPRECATE;TBB_USE_DEBUG=0;__TBB_LIB_NAME=tbb.lib;REQUIRE_IOSTREAM;AW_NEW_IOSTREAMS;Bits64_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>C:\Program Files\Autodesk\Maya2018\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;Foundation.lib;OpenMaya.lib;OpenMayaAnim.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <AdditionalOptions>/export:initializePlugin /export:uninitializePlugin %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="core\Droplet.cpp" />
+    <ClCompile Include="nodes\rigging\QuaternionTwist.cpp" />
+    <ClCompile Include="nodes\rigging\Soft2BoneIk.cpp" />
+    <ClCompile Include="nodes\stacks\AngleStackDivide.cpp" />
+    <ClCompile Include="nodes\stacks\AngleStackMax.cpp" />
+    <ClCompile Include="nodes\stacks\AngleStackMin.cpp" />
+    <ClCompile Include="nodes\stacks\AngleStackMinus.cpp" />
+    <ClCompile Include="nodes\stacks\AngleStackMultiply.cpp" />
+    <ClCompile Include="nodes\stacks\AngleStackRange.cpp" />
+    <ClCompile Include="nodes\stacks\AngleStackSum.cpp" />
+    <ClCompile Include="nodes\stacks\FloatStackDivide.cpp" />
+    <ClCompile Include="nodes\stacks\FloatStackMax.cpp" />
+    <ClCompile Include="nodes\stacks\FloatStackMin.cpp" />
+    <ClCompile Include="nodes\stacks\FloatStackMinus.cpp" />
+    <ClCompile Include="nodes\stacks\FloatStackMultiply.cpp" />
+    <ClCompile Include="nodes\stacks\FloatStackRange.cpp" />
+    <ClCompile Include="nodes\stacks\FloatStackSum.cpp" />
+    <ClCompile Include="utilities\Attributes.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="core\Droplet.h" />
+    <ClInclude Include="core\DropletNode.h" />
+    <ClInclude Include="nodes\angles\AngleAdd.h" />
+    <ClInclude Include="nodes\angles\AngleClamp.h" />
+    <ClInclude Include="nodes\angles\AngleDivide.h" />
+    <ClInclude Include="nodes\angles\AngleExponent.h" />
+    <ClInclude Include="nodes\angles\AngleMultiply.h" />
+    <ClInclude Include="nodes\angles\AnglePower.h" />
+    <ClInclude Include="nodes\angles\AngleRange.h" />
+    <ClInclude Include="nodes\angles\AngleSqrt.h" />
+    <ClInclude Include="nodes\angles\AngleSubtract.h" />
+    <ClInclude Include="nodes\basic\Exponent.h" />
+    <ClInclude Include="nodes\basic\Power.h" />
+    <ClInclude Include="nodes\basic\Sqrt.h" />
+    <ClInclude Include="nodes\interpolation\InterpolateAngles.h" />
+    <ClInclude Include="nodes\interpolation\InterpolateAngleVectors.h" />
+    <ClInclude Include="nodes\interpolation\InterpolateFloats.h" />
+    <ClInclude Include="nodes\interpolation\InterpolateFloatVectors.h" />
+    <ClInclude Include="nodes\interpolation\InterpolateMatrices.h" />
+    <ClInclude Include="nodes\interpolation\InterpolateQuaternions.h" />
+    <ClInclude Include="nodes\rigging\QuaternionTwist.h" />
+    <ClInclude Include="nodes\rigging\Soft2BoneIk.h" />
+    <ClInclude Include="nodes\spaces\DistanceBetweenMatrices.h" />
+    <ClInclude Include="nodes\spaces\DistanceBetweenVectors.h" />
+    <ClInclude Include="nodes\spaces\RelativeMatrix.h" />
+    <ClInclude Include="nodes\stacks\AngleStackDivide.h" />
+    <ClInclude Include="nodes\stacks\AngleStackMax.h" />
+    <ClInclude Include="nodes\stacks\AngleStackMin.h" />
+    <ClInclude Include="nodes\stacks\AngleStackMinus.h" />
+    <ClInclude Include="nodes\stacks\AngleStackMultiply.h" />
+    <ClInclude Include="nodes\stacks\AngleStackRange.h" />
+    <ClInclude Include="nodes\stacks\AngleStackSum.h" />
+    <ClInclude Include="nodes\stacks\FloatStackDivide.h" />
+    <ClInclude Include="nodes\stacks\FloatStackMax.h" />
+    <ClInclude Include="nodes\stacks\FloatStackMin.h" />
+    <ClInclude Include="nodes\stacks\FloatStackMinus.h" />
+    <ClInclude Include="nodes\stacks\FloatStackMultiply.h" />
+    <ClInclude Include="nodes\stacks\FloatStackRange.h" />
+    <ClInclude Include="nodes\stacks\FloatStackSum.h" />
+    <ClInclude Include="nodes\vectors\AngleVectorAdd.h" />
+    <ClInclude Include="nodes\vectors\AngleVectorDivide.h" />
+    <ClInclude Include="nodes\vectors\AngleVectorScale.h" />
+    <ClInclude Include="nodes\vectors\FloatVectorAdd.h" />
+    <ClInclude Include="nodes\vectors\FloatVectorDivide.h" />
+    <ClInclude Include="nodes\vectors\FloatVectorScale.h" />
+    <ClInclude Include="utilities\Attributes.h" />
+    <ClInclude Include="utilities\Math.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

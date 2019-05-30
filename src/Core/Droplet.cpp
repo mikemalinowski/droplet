@@ -28,7 +28,6 @@ Author : Mike Malinowski : www.twisted.space
 #include "../Nodes/Stacks/AngleStackMin.h"
 #include "../Nodes/Stacks/AngleStackMax.h"
 #include "../Nodes/Rigging/Soft2BoneIk.h"
-// #include "../Nodes/Rigging/FootPivot.h"
 
 // Other Includes
 #include <vector>
