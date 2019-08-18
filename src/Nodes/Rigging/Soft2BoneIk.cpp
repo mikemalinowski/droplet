@@ -63,13 +63,14 @@ MStatus Soft2BoneIk::initialize()
 	MFnMatrixAttribute  matrixAttrFn;
 
 	// Add the default length attributes
-	Soft2BoneIk::SecondBoneLength = numericAttrFn.create("firstBoneLength", "fbl", MFnNumericData::kDouble);
-	//numericAttrFn.setKeyable(true);
-	CHECK_MSTATUS_AND_RETURN(addAttribute(Soft2BoneIk::SecondBoneLength), MStatus::kFailure);
-
-	Soft2BoneIk::FirstBoneLength = numericAttrFn.create("secondBoneLength", "sbl", MFnNumericData::kDouble);
+	Soft2BoneIk::FirstBoneLength = numericAttrFn.create("firstBoneLength", "fbl", MFnNumericData::kDouble);
 	//numericAttrFn.setKeyable(true);
 	CHECK_MSTATUS_AND_RETURN(addAttribute(Soft2BoneIk::FirstBoneLength), MStatus::kFailure);
+
+
+	Soft2BoneIk::SecondBoneLength = numericAttrFn.create("secondBoneLength", "sbl", MFnNumericData::kDouble);
+	//numericAttrFn.setKeyable(true);
+	CHECK_MSTATUS_AND_RETURN(addAttribute(Soft2BoneIk::SecondBoneLength), MStatus::kFailure);
 
 	// Add the default length attributes
 	Soft2BoneIk::AdditionalFirstBoneStretch = numericAttrFn.create("additionalFirstBoneStretch", "afs", MFnNumericData::kDouble);

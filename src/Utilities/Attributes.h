@@ -18,9 +18,11 @@ Author : Mike Malinowski : www.twisted.space
 #include <maya/MGlobal.h>
 #include <maya/MPxNode.h>
 #include <maya/MStatus.h>
+#include <maya/MMatrix.h>
 #include <maya/MFnAttribute.h>
 #include <maya/MFnUnitAttribute.h>
 #include <maya/MFnEnumAttribute.h>
+#include <maya/MFnMatrixAttribute.h>
 #include <maya/MFnNumericAttribute.h>
 #include <maya/MFnCompoundAttribute.h>
 
@@ -79,13 +81,21 @@ namespace dp
         // define whether or not the attribute should be an
         // input or an output.
         void Create(const char* name, MAngle value, static MPxNode node, MObject& attr, bool isInput, bool isArray=false);
-
+		/*
         // ------------------------------------------------
         // Creates an enum attribute and adds the attribute
         // to the node. You can use the isInput property to
         // define whether or not the attribute should be an
         // input or an output.
         void Create(const char* name, std::vector<const char*> values, static MPxNode node, MObject& attr, bool isInput);
+		*/
+
+		// -------------------------------------------------
+		// Creates an Angle attribute and adds the attribute
+		// to the node. You can use the isInput property to
+		// define whether or not the attribute should be an
+		// input or an output.
+		void Create(const char* name, MMatrix value, static MPxNode node, MObject& attr, bool isInput, bool isArray = false);
 
         // -----------------------------------------------------
         // Creates a numeric collection attribute which ties the

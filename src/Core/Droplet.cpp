@@ -13,6 +13,15 @@ Author : Mike Malinowski : www.twisted.space
 // Droplet Includes
 #include "Droplet.h"
 #include "DropletNode.h"
+#include "../Nodes/Basic/Sin.h"
+#include "../Nodes/Basic/Cos.h"
+#include "../Nodes/Basic/Tan.h"
+#include "../Nodes/Basic/ASin.h"
+#include "../Nodes/Basic/ACos.h"
+#include "../Nodes/Basic/ATan.h"
+#include "../Nodes/Basic/Power.h"
+#include "../Nodes/Basic/Sqrt.h"
+#include "../Nodes/Basic/Exponent.h"
 #include "../Nodes/Stacks/FloatStackSum.h"
 #include "../Nodes/Stacks/FloatStackMinus.h"
 #include "../Nodes/Stacks/FloatStackRange.h"
@@ -28,6 +37,8 @@ Author : Mike Malinowski : www.twisted.space
 #include "../Nodes/Stacks/AngleStackMin.h"
 #include "../Nodes/Stacks/AngleStackMax.h"
 #include "../Nodes/Rigging/Soft2BoneIk.h"
+#include "../Nodes/Spaces/TransformMixer.h"
+// #include "../Nodes/Rigging/FootPivot.h"
 
 // Other Includes
 #include <vector>
@@ -55,6 +66,17 @@ MStatus initializePlugin(MObject obj) {
 	MFnPlugin plugin(obj, "Mike Malinowski", "1.0", "Any");
 
     MStatus status;
+
+	RegisterNode<FloatSin>(plugin);
+	RegisterNode<FloatASin>(plugin);
+	RegisterNode<FloatCos>(plugin);
+	RegisterNode<FloatACos>(plugin);
+	RegisterNode<FloatTan>(plugin);
+	RegisterNode<FloatATan>(plugin);
+
+	RegisterNode<FloatSqrt>(plugin);
+	RegisterNode<FloatPower>(plugin);
+	RegisterNode<FloatExponent>(plugin);
     RegisterNode<FloatStackSum>(plugin);
     RegisterNode<FloatStackMinus>(plugin);
     RegisterNode<FloatStackRange>(plugin);
@@ -70,6 +92,7 @@ MStatus initializePlugin(MObject obj) {
     RegisterNode<AngleStackMin>(plugin);
     RegisterNode<AngleStackMax>(plugin);
     RegisterNode<Soft2BoneIk>(plugin);
+	RegisterNode<TransformMixer>(plugin);
     // RegisterNode<FootPivot>(plugin);
 
     return MStatus::kSuccess;
@@ -83,6 +106,17 @@ MStatus uninitializePlugin(MObject obj) {
     MFnPlugin plugin(obj);
     MStatus status;
 
+
+	status = plugin.deregisterNode(FloatSin::Identifier);
+	status = plugin.deregisterNode(FloatASin::Identifier);
+	status = plugin.deregisterNode(FloatCos::Identifier);
+	status = plugin.deregisterNode(FloatACos::Identifier);
+	status = plugin.deregisterNode(FloatTan::Identifier);
+	status = plugin.deregisterNode(FloatATan::Identifier);
+
+	status = plugin.deregisterNode(FloatSqrt::Identifier);
+	status = plugin.deregisterNode(FloatPower::Identifier);
+	status = plugin.deregisterNode(FloatExponent::Identifier);
     status = plugin.deregisterNode(FloatStackSum::Identifier);
     status = plugin.deregisterNode(FloatStackMinus::Identifier);
     status = plugin.deregisterNode(FloatStackRange::Identifier);
@@ -98,6 +132,7 @@ MStatus uninitializePlugin(MObject obj) {
     status = plugin.deregisterNode(AngleStackMin::Identifier);
     status = plugin.deregisterNode(AngleStackMax::Identifier);
     status = plugin.deregisterNode(Soft2BoneIk::Identifier);
+	status = plugin.deregisterNode(TransformMixer::Identifier);
     // status = plugin.deregisterNode(FootPivot::Identifier);
 
     return MStatus::kSuccess;

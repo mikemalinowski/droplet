@@ -1,8 +1,6 @@
 /*
 
-Droplet : Power
-
-Calculates the power of a single float
+Droplet : ACos
 
 Author : Mike Malinowski : www.twisted.space
 
@@ -19,14 +17,13 @@ Author : Mike Malinowski : www.twisted.space
 #include "../../Core/DropletNode.h"
 #include "../../Utilities/Attributes.h"
 
-// This node takes in any number of float values
-// and outputs the sum of all those values
-class FloatPower : public DropletNode
+
+class FloatACos : public DropletNode
 {
 public:
 
-	static const int Identifier = 0x00117fd0;
-	static const char* NodeName() { return "Power"; }
+	static const int Identifier = 0x00117fd6;
+	static const char* NodeName() { return "ACos"; }
 
 	//-------------------------------------------
 	static void* creator();
@@ -40,7 +37,6 @@ public:
 	//-------------------------------------------
 	// These are our input plugs
 	static MObject inValue;
-	static MObject inPower;
 
 	//-------------------------------------------
 	// These are our output plugs

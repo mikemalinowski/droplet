@@ -1,13 +1,14 @@
 /*
 
-Droplet : Power
+Droplet : TransformMixer
 
-Calculates the power of a single float
+Takes in a list of matrices and for each one the
 
 Author : Mike Malinowski : www.twisted.space
 
 */
 #pragma once
+
 
 // Maya Includes
 #include <maya/MPlug.h>
@@ -21,12 +22,12 @@ Author : Mike Malinowski : www.twisted.space
 
 // This node takes in any number of float values
 // and outputs the sum of all those values
-class FloatPower : public DropletNode
+class TransformMixer : public DropletNode
 {
 public:
 
-	static const int Identifier = 0x00117fd0;
-	static const char* NodeName() { return "Power"; }
+	static const int Identifier = 0x0012f77f;
+	static const char* NodeName() { return "TransformMixer"; }
 
 	//-------------------------------------------
 	static void* creator();
@@ -39,8 +40,9 @@ public:
 
 	//-------------------------------------------
 	// These are our input plugs
-	static MObject inValue;
-	static MObject inPower;
+	static MObject weights;
+	static MObject poses;
+	static MObject tracks;
 
 	//-------------------------------------------
 	// These are our output plugs

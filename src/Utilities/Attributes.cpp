@@ -18,6 +18,8 @@ Author : Mike Malinowski : www.twisted.space
 #include <maya/MGlobal.h>
 #include <maya/MPxNode.h>
 #include <maya/MStatus.h>
+#include <maya/MMatrix.h>
+#include <maya/MFnMatrixAttribute.h>
 #include <maya/MFnAttribute.h>
 #include <maya/MFnUnitAttribute.h>
 #include <maya/MFnEnumAttribute.h>
@@ -154,6 +156,30 @@ namespace dp
             node.addAttribute(attr);
         }
 
+		// -------------------------------------------------
+		// Creates an Angle attribute and adds the attribute
+		// to the node. You can use the isInput property to
+		// define whether or not the attribute should be an
+		// input or an output.
+		void Create(const char* name, MMatrix value, static MPxNode node, MObject& attr, bool isInput, bool isArray = false)
+		{
+
+			MFnMatrixAttribute attrFn;
+
+			// -- Create the attribute
+			attr = attrFn.create(name, name, attrFn.kDouble);
+			attrFn.setArray(isArray);
+
+			if (isInput) {
+				DefineAsInput(attrFn);
+			}
+			else {
+				DefineAsOutput(attrFn);
+			}
+			node.addAttribute(attr);
+		}
+
+		/*
         // ------------------------------------------------
         // Creates an enum attribute and adds the attribute
         // to the node. You can use the isInput property to
@@ -182,7 +208,7 @@ namespace dp
             }
             node.addAttribute(attr);
         }
-
+		*/
         // -----------------------------------------------------
         // Creates a numeric collection attribute which ties the
         // three given numerical attributes together

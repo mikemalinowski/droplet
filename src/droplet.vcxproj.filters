@@ -13,204 +13,315 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
     </Filter>
+    <Filter Include="Header Files\Core">
+      <UniqueIdentifier>{bb9a5b78-790b-40c3-b9ae-e42c7e76bcf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Nodes">
+      <UniqueIdentifier>{bc42905d-3e9b-422a-a4ff-02c13fba53d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utilities">
+      <UniqueIdentifier>{dcbed5b4-609d-4d32-8c89-a9620a3a530b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core">
+      <UniqueIdentifier>{34268cd5-3124-40d5-8980-23521d2c6dcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utilities">
+      <UniqueIdentifier>{8a4ed00e-60e9-474e-b548-5a1cc92d9b03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Nodes">
+      <UniqueIdentifier>{cfd2b93e-bbc4-49ea-844d-95fa475bfb17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Nodes\Angles">
+      <UniqueIdentifier>{7c7b6517-a3b9-4e95-a6c2-5fb573a90333}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Nodes\Basic">
+      <UniqueIdentifier>{ecf2cf04-263c-43a3-b2c8-12209c65d72c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Nodes\Interpolation">
+      <UniqueIdentifier>{bcdd1f72-6126-4dc1-9588-26fc1f028c24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Nodes\Rigging">
+      <UniqueIdentifier>{42870e80-79ad-4f4b-a0d7-10ad3715e6ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Nodes\Spaces">
+      <UniqueIdentifier>{7a0b33f8-b9b9-4802-b466-30a6409801c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Nodes\Stacks">
+      <UniqueIdentifier>{eeab6580-8866-4e6c-b3ab-3ea22e78f7a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Nodes\Angles">
+      <UniqueIdentifier>{0df7102a-b96f-48a2-bd56-6cdff5614c0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Nodes\Basic">
+      <UniqueIdentifier>{09e3245f-119d-4e54-a89b-aa846cefedb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Nodes\Interpolation">
+      <UniqueIdentifier>{b19193ae-29ed-4b5b-8584-475f42a3d2a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Nodes\Stacks">
+      <UniqueIdentifier>{b96c6c01-d588-48ce-a328-2fd7ef69a219}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Nodes\Spaces">
+      <UniqueIdentifier>{97d83965-b634-4294-bea5-65a0c4e53293}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Nodes\Rigging">
+      <UniqueIdentifier>{d2dd4320-2ceb-48a8-8051-31e4618f4411}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Nodes\Vectors">
+      <UniqueIdentifier>{11d5372d-adf3-489d-9455-c68a045e1b97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Nodes\Vectors">
+      <UniqueIdentifier>{a1ec35c2-53c4-4b3c-add9-98376b5ec9f5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="core\Droplet.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="nodes\rigging\QuaternionTwist.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="nodes\rigging\Soft2BoneIk.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Core</Filter>
     </ClCompile>
     <ClCompile Include="nodes\stacks\AngleStackDivide.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Nodes\Stacks</Filter>
     </ClCompile>
     <ClCompile Include="nodes\stacks\AngleStackMax.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Nodes\Stacks</Filter>
     </ClCompile>
     <ClCompile Include="nodes\stacks\AngleStackMin.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Nodes\Stacks</Filter>
     </ClCompile>
     <ClCompile Include="nodes\stacks\AngleStackMinus.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Nodes\Stacks</Filter>
     </ClCompile>
     <ClCompile Include="nodes\stacks\AngleStackMultiply.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Nodes\Stacks</Filter>
     </ClCompile>
     <ClCompile Include="nodes\stacks\AngleStackRange.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Nodes\Stacks</Filter>
     </ClCompile>
     <ClCompile Include="nodes\stacks\AngleStackSum.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Nodes\Stacks</Filter>
     </ClCompile>
     <ClCompile Include="nodes\stacks\FloatStackDivide.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Nodes\Stacks</Filter>
     </ClCompile>
     <ClCompile Include="nodes\stacks\FloatStackMax.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Nodes\Stacks</Filter>
     </ClCompile>
     <ClCompile Include="nodes\stacks\FloatStackMin.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Nodes\Stacks</Filter>
     </ClCompile>
     <ClCompile Include="nodes\stacks\FloatStackMinus.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Nodes\Stacks</Filter>
     </ClCompile>
     <ClCompile Include="nodes\stacks\FloatStackMultiply.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Nodes\Stacks</Filter>
     </ClCompile>
     <ClCompile Include="nodes\stacks\FloatStackRange.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Nodes\Stacks</Filter>
     </ClCompile>
     <ClCompile Include="nodes\stacks\FloatStackSum.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Nodes\Stacks</Filter>
+    </ClCompile>
+    <ClCompile Include="nodes\rigging\QuaternionTwist.cpp">
+      <Filter>Source Files\Nodes\Rigging</Filter>
+    </ClCompile>
+    <ClCompile Include="nodes\rigging\Soft2BoneIk.cpp">
+      <Filter>Source Files\Nodes\Rigging</Filter>
     </ClCompile>
     <ClCompile Include="utilities\Attributes.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Nodes\Basic\Power.cpp">
+      <Filter>Source Files\Nodes\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="Nodes\Basic\Exponent.cpp">
+      <Filter>Source Files\Nodes\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="Nodes\Basic\Sqrt.cpp">
+      <Filter>Source Files\Nodes\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="Nodes\Basic\Sin.cpp">
+      <Filter>Source Files\Nodes\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="Nodes\Basic\ASin.cpp">
+      <Filter>Source Files\Nodes\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="Nodes\Basic\Cos.cpp">
+      <Filter>Source Files\Nodes\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="Nodes\Basic\ACos.cpp">
+      <Filter>Source Files\Nodes\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="Nodes\Basic\Tan.cpp">
+      <Filter>Source Files\Nodes\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="Nodes\Basic\ATan.cpp">
+      <Filter>Source Files\Nodes\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="Nodes\Spaces\TransformMixer.cpp">
+      <Filter>Source Files\Nodes\Spaces</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="core\Droplet.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Core</Filter>
     </ClInclude>
     <ClInclude Include="core\DropletNode.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Core</Filter>
     </ClInclude>
     <ClInclude Include="nodes\angles\AngleAdd.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Nodes\Angles</Filter>
     </ClInclude>
     <ClInclude Include="nodes\angles\AngleClamp.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Nodes\Angles</Filter>
     </ClInclude>
     <ClInclude Include="nodes\angles\AngleDivide.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Nodes\Angles</Filter>
     </ClInclude>
     <ClInclude Include="nodes\angles\AngleExponent.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Nodes\Angles</Filter>
     </ClInclude>
     <ClInclude Include="nodes\angles\AngleMultiply.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Nodes\Angles</Filter>
     </ClInclude>
     <ClInclude Include="nodes\angles\AnglePower.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Nodes\Angles</Filter>
     </ClInclude>
     <ClInclude Include="nodes\angles\AngleRange.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Nodes\Angles</Filter>
     </ClInclude>
     <ClInclude Include="nodes\angles\AngleSqrt.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Nodes\Angles</Filter>
     </ClInclude>
     <ClInclude Include="nodes\angles\AngleSubtract.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="nodes\basic\Exponent.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="nodes\basic\Power.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Nodes\Angles</Filter>
     </ClInclude>
     <ClInclude Include="nodes\basic\Sqrt.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Nodes\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="nodes\basic\Power.h">
+      <Filter>Header Files\Nodes\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="nodes\basic\Exponent.h">
+      <Filter>Header Files\Nodes\Basic</Filter>
     </ClInclude>
     <ClInclude Include="nodes\interpolation\InterpolateAngles.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Nodes\Interpolation</Filter>
     </ClInclude>
     <ClInclude Include="nodes\interpolation\InterpolateAngleVectors.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Nodes\Interpolation</Filter>
     </ClInclude>
     <ClInclude Include="nodes\interpolation\InterpolateFloats.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Nodes\Interpolation</Filter>
     </ClInclude>
     <ClInclude Include="nodes\interpolation\InterpolateFloatVectors.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Nodes\Interpolation</Filter>
     </ClInclude>
     <ClInclude Include="nodes\interpolation\InterpolateMatrices.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Nodes\Interpolation</Filter>
     </ClInclude>
     <ClInclude Include="nodes\interpolation\InterpolateQuaternions.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Nodes\Interpolation</Filter>
     </ClInclude>
     <ClInclude Include="nodes\rigging\QuaternionTwist.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="nodes\rigging\Soft2BoneIk.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="nodes\spaces\DistanceBetweenMatrices.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="nodes\spaces\DistanceBetweenVectors.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Nodes\Rigging</Filter>
     </ClInclude>
     <ClInclude Include="nodes\spaces\RelativeMatrix.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Nodes\Spaces</Filter>
+    </ClInclude>
+    <ClInclude Include="nodes\spaces\DistanceBetweenMatrices.h">
+      <Filter>Header Files\Nodes\Spaces</Filter>
+    </ClInclude>
+    <ClInclude Include="nodes\spaces\DistanceBetweenVectors.h">
+      <Filter>Header Files\Nodes\Spaces</Filter>
     </ClInclude>
     <ClInclude Include="nodes\stacks\AngleStackDivide.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Nodes\Stacks</Filter>
     </ClInclude>
     <ClInclude Include="nodes\stacks\AngleStackMax.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Nodes\Stacks</Filter>
     </ClInclude>
     <ClInclude Include="nodes\stacks\AngleStackMin.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Nodes\Stacks</Filter>
     </ClInclude>
     <ClInclude Include="nodes\stacks\AngleStackMinus.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Nodes\Stacks</Filter>
     </ClInclude>
     <ClInclude Include="nodes\stacks\AngleStackMultiply.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Nodes\Stacks</Filter>
     </ClInclude>
     <ClInclude Include="nodes\stacks\AngleStackRange.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Nodes\Stacks</Filter>
     </ClInclude>
     <ClInclude Include="nodes\stacks\AngleStackSum.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Nodes\Stacks</Filter>
     </ClInclude>
     <ClInclude Include="nodes\stacks\FloatStackDivide.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Nodes\Stacks</Filter>
     </ClInclude>
     <ClInclude Include="nodes\stacks\FloatStackMax.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Nodes\Stacks</Filter>
     </ClInclude>
     <ClInclude Include="nodes\stacks\FloatStackMin.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Nodes\Stacks</Filter>
     </ClInclude>
     <ClInclude Include="nodes\stacks\FloatStackMinus.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Nodes\Stacks</Filter>
     </ClInclude>
     <ClInclude Include="nodes\stacks\FloatStackMultiply.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Nodes\Stacks</Filter>
     </ClInclude>
     <ClInclude Include="nodes\stacks\FloatStackRange.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Nodes\Stacks</Filter>
     </ClInclude>
     <ClInclude Include="nodes\stacks\FloatStackSum.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Nodes\Stacks</Filter>
     </ClInclude>
     <ClInclude Include="nodes\vectors\AngleVectorAdd.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Nodes\Vectors</Filter>
     </ClInclude>
     <ClInclude Include="nodes\vectors\AngleVectorDivide.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Nodes\Vectors</Filter>
     </ClInclude>
     <ClInclude Include="nodes\vectors\AngleVectorScale.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Nodes\Vectors</Filter>
     </ClInclude>
     <ClInclude Include="nodes\vectors\FloatVectorAdd.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Nodes\Vectors</Filter>
     </ClInclude>
     <ClInclude Include="nodes\vectors\FloatVectorDivide.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Nodes\Vectors</Filter>
     </ClInclude>
     <ClInclude Include="nodes\vectors\FloatVectorScale.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Nodes\Vectors</Filter>
+    </ClInclude>
+    <ClInclude Include="nodes\rigging\Soft2BoneIk.h">
+      <Filter>Header Files\Nodes\Rigging</Filter>
     </ClInclude>
     <ClInclude Include="utilities\Attributes.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Utilities</Filter>
     </ClInclude>
     <ClInclude Include="utilities\Math.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Nodes\Basic\Sin.h">
+      <Filter>Header Files\Nodes\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Nodes\Basic\ASin.h">
+      <Filter>Header Files\Nodes\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Nodes\Basic\Cos.h">
+      <Filter>Header Files\Nodes\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Nodes\Basic\ACos.h">
+      <Filter>Header Files\Nodes\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Nodes\Basic\Tan.h">
+      <Filter>Header Files\Nodes\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Nodes\Basic\ATan.h">
+      <Filter>Header Files\Nodes\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Nodes\Spaces\TransformMixer.h">
+      <Filter>Header Files\Nodes\Spaces</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
