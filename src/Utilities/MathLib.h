@@ -8,7 +8,6 @@ Author : Mike Malinowski : www.twisted.space
 #pragma once
 
 // Maya Includes
-#include <maya/MPxNode.h>
 #include <maya/MGlobal.h>
 #include <maya/MMatrix.h>
 #include <maya/MVector.h>
@@ -26,7 +25,7 @@ Author : Mike Malinowski : www.twisted.space
 namespace DropletMath
 {
 	/* ---------------------------------------------------------------------- */
-	MVector RotationFromTransform(MTransformationMatrix transform, double x_offset=0, double y_offset=0, double z_offset=0)
+	MVector RotationFromTransform(MTransformationMatrix transform, double x_offset = 0, double y_offset = 0, double z_offset = 0)
 	{
 		MEulerRotation rotation = transform.eulerRotation();
 
@@ -51,7 +50,7 @@ namespace DropletMath
 		MMatrix relativeMat4 = matrix * parentWorldSpaceMatrix.inverse();
 		return relativeMat4;
 	};
-	
+
 	/* ---------------------------------------------------------------------- */
 	MTransformationMatrix FormTransform(MMatrix rotationMatrix, MVector translationVector)
 	{
@@ -76,7 +75,7 @@ namespace DropletMath
 		// -- Factor in the blend and add in the 
 		// -- first posisiton to make it relative
 		delta = (delta * blend) + positionA;
-		
+
 		return delta;
 	}
 
@@ -111,7 +110,7 @@ namespace DropletMath
 
 		// Calculate temporary values.
 		double halfTheta = acos(cosHalfTheta);
-		double sinHalfTheta = sqrt(1.0 - cosHalfTheta*cosHalfTheta);
+		double sinHalfTheta = sqrt(1.0 - cosHalfTheta * cosHalfTheta);
 
 		// if theta = 180 degrees then result is not fully defined
 		// we could rotate around any axis normal to qa or qb

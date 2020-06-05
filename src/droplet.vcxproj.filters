@@ -129,6 +129,9 @@
     <ClCompile Include="utilities\Attributes.cpp">
       <Filter>Source Files\Utilities</Filter>
     </ClCompile>
+    <ClCompile Include="Nodes\Rigging\FacialMatrixBlender.cpp">
+      <Filter>Source Files\Nodes\Rigging</Filter>
+    </ClCompile>
     <ClCompile Include="Nodes\Basic\Power.cpp">
       <Filter>Source Files\Nodes\Basic</Filter>
     </ClCompile>
@@ -299,8 +302,9 @@
     <ClInclude Include="utilities\Attributes.h">
       <Filter>Header Files\Utilities</Filter>
     </ClInclude>
-    <ClInclude Include="utilities\Math.h">
-      <Filter>Header Files\Utilities</Filter>
+    <ClInclude Include="Nodes\Rigging\FacialMatrixBlender.h">
+      <Filter>Header Files\Nodes\Rigging</Filter>
+    </ClInclude>
     </ClInclude>
     <ClInclude Include="Nodes\Basic\Sin.h">
       <Filter>Header Files\Nodes\Basic</Filter>
@@ -322,6 +326,9 @@
     </ClInclude>
     <ClInclude Include="Nodes\Spaces\TransformMixer.h">
       <Filter>Header Files\Nodes\Spaces</Filter>
+    </ClInclude>
+    <ClInclude Include="utilities\MathLib.h">
+      <Filter>Header Files\Utilities</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

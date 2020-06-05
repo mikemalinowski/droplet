@@ -114,6 +114,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="core\Droplet.cpp" />
+    <ClCompile Include="Nodes\Rigging\FacialMatrixBlender.cpp" />
     <ClCompile Include="Nodes\Basic\ACos.cpp" />
     <ClCompile Include="Nodes\Basic\ASin.cpp" />
     <ClCompile Include="Nodes\Basic\ATan.cpp" />
@@ -125,7 +126,6 @@
     <ClCompile Include="Nodes\Basic\Tan.cpp" />
     <ClCompile Include="nodes\rigging\QuaternionTwist.cpp" />
     <ClCompile Include="nodes\rigging\Soft2BoneIk.cpp" />
-    <ClCompile Include="Nodes\Spaces\TransformMixer.cpp" />
     <ClCompile Include="nodes\stacks\AngleStackDivide.cpp" />
     <ClCompile Include="nodes\stacks\AngleStackMax.cpp" />
     <ClCompile Include="nodes\stacks\AngleStackMin.cpp" />
@@ -169,12 +169,12 @@
     <ClInclude Include="nodes\interpolation\InterpolateFloatVectors.h" />
     <ClInclude Include="nodes\interpolation\InterpolateMatrices.h" />
     <ClInclude Include="nodes\interpolation\InterpolateQuaternions.h" />
+    <ClInclude Include="Nodes\Rigging\FacialMatrixBlender.h" />
     <ClInclude Include="nodes\rigging\QuaternionTwist.h" />
     <ClInclude Include="nodes\rigging\Soft2BoneIk.h" />
     <ClInclude Include="nodes\spaces\DistanceBetweenMatrices.h" />
     <ClInclude Include="nodes\spaces\DistanceBetweenVectors.h" />
     <ClInclude Include="nodes\spaces\RelativeMatrix.h" />
-    <ClInclude Include="Nodes\Spaces\TransformMixer.h" />
     <ClInclude Include="nodes\stacks\AngleStackDivide.h" />
     <ClInclude Include="nodes\stacks\AngleStackMax.h" />
     <ClInclude Include="nodes\stacks\AngleStackMin.h" />
@@ -196,7 +196,7 @@
     <ClInclude Include="nodes\vectors\FloatVectorDivide.h" />
     <ClInclude Include="nodes\vectors\FloatVectorScale.h" />
     <ClInclude Include="utilities\Attributes.h" />
-    <ClInclude Include="utilities\Math.h" />
+    <ClInclude Include="utilities\MathLib.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

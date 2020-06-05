@@ -37,8 +37,7 @@ Author : Mike Malinowski : www.twisted.space
 #include "../Nodes/Stacks/AngleStackMin.h"
 #include "../Nodes/Stacks/AngleStackMax.h"
 #include "../Nodes/Rigging/Soft2BoneIk.h"
-#include "../Nodes/Spaces/TransformMixer.h"
-// #include "../Nodes/Rigging/FootPivot.h"
+#include "../Nodes/Rigging/FacialMatrixBlender.h"
 
 // Other Includes
 #include <vector>
@@ -92,7 +91,7 @@ MStatus initializePlugin(MObject obj) {
     RegisterNode<AngleStackMin>(plugin);
     RegisterNode<AngleStackMax>(plugin);
     RegisterNode<Soft2BoneIk>(plugin);
-	RegisterNode<TransformMixer>(plugin);
+	RegisterNode<FacialMatrixBlender>(plugin);
     // RegisterNode<FootPivot>(plugin);
 
     return MStatus::kSuccess;
@@ -132,7 +131,7 @@ MStatus uninitializePlugin(MObject obj) {
     status = plugin.deregisterNode(AngleStackMin::Identifier);
     status = plugin.deregisterNode(AngleStackMax::Identifier);
     status = plugin.deregisterNode(Soft2BoneIk::Identifier);
-	status = plugin.deregisterNode(TransformMixer::Identifier);
+	status = plugin.deregisterNode(FacialMatrixBlender::Identifier);
     // status = plugin.deregisterNode(FootPivot::Identifier);
 
     return MStatus::kSuccess;
